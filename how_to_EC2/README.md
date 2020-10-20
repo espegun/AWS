@@ -10,5 +10,8 @@ Easy to move projects between different platforms.
 `$ ...` Some comment<br/>
 
 ## Useful links
-[Oslo kommune](https://www.oslo.kommune.no/)
+[Do this first: Set up for EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)<br/>
+[Then: Tutorial EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)<br/>
+
+
 
