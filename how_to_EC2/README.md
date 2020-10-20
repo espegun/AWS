@@ -1,7 +1,7 @@
-# How to <something>
+# How to EC2
 
 ## The purpose
-...Easy to move projects between different platforms.
+Like most cloud services, it's easy to get the power and scalability you need, and you pay for what you use.
 
 ## How does it work?
 You need to generate and use a [key pair](https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#KeyPairs:) to log in to your instance securely. First generate a private key, save it a safe place and `chmod 400 file.pem` so only you can read it.<br/>
