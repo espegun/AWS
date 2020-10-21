@@ -16,7 +16,7 @@ You may also SCP files there.
 
 
 ## Useful links
-[Do this first: Set up for EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)<br/>
+[First - setup key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)<br/>
 [Then: Tutorial EC2 setup](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)<br/>
 
 
