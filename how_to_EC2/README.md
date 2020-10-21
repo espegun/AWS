@@ -12,6 +12,7 @@ You may also SCP files there.
 
 ## Useful commands
 `ssh -i ~/Desktop/Main/keys/EC2_test_instance.pem ec2-user@ec2-54-217-32-187.eu-west-1.compute.amazonaws.com` SSH to the instance. `ec2-user` is the default user @ the *Public IPv4 DNS*.<br/>
+To update Python and install Jupyter, see Weber p11-12.<br/>
 
 
 ## Useful links
