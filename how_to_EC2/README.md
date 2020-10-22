@@ -11,8 +11,10 @@ Launch an instance and add the key pair and security group (may be modified) alr
 You may also SCP files there.
 
 ## Useful commands
-`ssh -i ~/Desktop/Main/keys/EC2_test_instance.pem ec2-user@ec2-54-217-32-187.eu-west-1.compute.amazonaws.com` SSH to the instance. `ec2-user` is the default user @ the *Public IPv4 DNS*.<br/>
-To update Python and install Jupyter, see Weber p11-12.<br/>
+`ssh -i /folder/EC2_test_instance.pem ec2-user@54.246.129.227` SSH to the instance. `ec2-user` is the default user @ the *Public IPv4*.<br/>
+To update Python, install Jupyter, see Weber p11-12.<br/>
+`jupyter notebook --ip <private IPv4>`  Set the instance running, it will return a token. Replace the private with public IP and paste in the browser.<br/>
+
 
 
 ## Useful links
