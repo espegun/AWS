@@ -13,7 +13,8 @@ You may also SCP files there.
 ## Useful commands
 `ssh -i /folder/EC2_test_instance.pem ec2-user@54.246.129.227` SSH to the instance. `ec2-user` is the default user @ the *Public IPv4*.<br/>
 To update Python, install Jupyter, see Weber p11-12.<br/>
-`jupyter notebook --ip <private IPv4>`  Set the instance running, it will return a token. Replace the private with public IP and paste in the browser.<br/>
+`jupyter notebook --ip <private IPv4>`   Set the instance running, it will return a token. Replace the private with public IP and paste in the browser (port 8888 must be open for inbound traffic).<br/>
+To set up a Flask API, simply run the `flaski_api.py`file (port 5000 must be open for inbound traffic).<br/>
 
 
 
