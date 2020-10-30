@@ -16,6 +16,7 @@ To update Python, install Jupyter, see Weber p11-12.<br/>
 `jupyter notebook --ip <private IPv4>`   Set the instance running, it will return a token. Replace the private with public IP and paste in the browser (port 8888 must be open for inbound traffic).<br/>
 To set up a Flask API, simply run the `flaski_api.py`file (port 5000 must be open for inbound traffic).<br/>
 
+### File transfer using SCP
 `scp -i /folder/EC2_test_instance.pem testing.py ec2-user@54.123.123.123:~/upload_dir/` How to upload something to the instance.<br/>
 `scp -i /folder/EC2_test_instance.pem ec2-user@54.216.85.67:~/source_dir/* .` How to download something from the instance.<br/>
 
