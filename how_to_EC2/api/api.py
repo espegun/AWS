@@ -1,5 +1,3 @@
-# Taken from Weber p36
-
 import flask
 app = flask.Flask(__name__)
 
@@ -10,9 +8,14 @@ def predict():
     params = flask.request.json
     if params is None:
         params = flask.request.args
+    
+    print("params")
+    print(params)
         
-    if "msg" in params.keys():
-        data["response"] = params.get("msg") + " ...and something more"
+    if "x1" in params.keys() and "x2" in params.keys():
+        
+                       
+        data["response"] = float(params.get("x1")) + float(params.get("x2"))
         data["success"] = True
        
     return flask.jsonify(data)
