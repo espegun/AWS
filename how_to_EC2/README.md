@@ -11,13 +11,14 @@ Launch an instance and add the key pair and security group (may be modified) alr
 You may also SCP files there.
 
 ## Useful commands
-`ssh -i /folder/EC2_test_instance.pem ec2-user@54.246.129.227` SSH to the instance. `ec2-user` is the default user @ the *Public IPv4*.<br/>
+`ssh -i /folder/EC2_test_instance.pem ec2-user@54.123.123.123` SSH to the instance. `ec2-user` is the default user @ the *Public IPv4*.<br/>
 To update Python, install Jupyter, see Weber p11-12.<br/>
 `jupyter notebook --ip <private IPv4>`   Set the instance running, it will return a token. Replace the private with public IP and paste in the browser (port 8888 must be open for inbound traffic).<br/>
 To set up a Flask API, simply run the `flaski_api.py`file (port 5000 must be open for inbound traffic).<br/>
 
-
-
+`scp -i /folder/EC2_test_instance.pem testing.py ec2-user@54.123.123.123:~/upload_dir/` How to upload something to the instance.<br/>
+`scp -i /folder/EC2_test_instance.pem ec2-user@54.216.85.67:~/source_dir/* .` How to download something from the instance.<br/>
+scp -i /home/espen/Desktop/Main/keys/EC2_test_instance.pem ec2-user@54.216.85.67:~/source_dir/* .
 ## Useful links
 [First - setup key pair and possibly create a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)<br/>
 [Then: Set up and connect to an EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)<br/>
