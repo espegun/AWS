@@ -18,7 +18,7 @@ Register the function using the `serverless.yml` file (replace `get_boilerplate`
 `...`  ....  
 
 ## Useful links
-[Lambdas Hello World](https://aws.amazon.com/getting-started/hands-on/run-serverless-code/) WIP  
+[Lambdas Hello World](https://aws.amazon.com/getting-started/hands-on/run-serverless-code/) **WIP**  
 [Serverless and lambdas](https://www.serverless.com/aws-lambda)  
 [Fredriks prezo fra JavaZone '19](https://github.com/fredriv/serverless-lambda-workshop)  
 
