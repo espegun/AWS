@@ -9,5 +9,6 @@ Register the function using the `serverless.yml` file (replace `get_boilerplate`
   
 Ikke AWS spesifikk, men les [Fundamentals of data architecture for data scientists](https://towardsdatascience.com/fundamentals-of-data-architecture-to-help-data-scientists-understand-architectural-diagrams-better-7bd26de41c66)  
 
+[Lambdas Hello World](https://aws.amazon.com/getting-started/hands-on/run-serverless-code/)  
 [Serverless and lambdas](https://www.serverless.com/aws-lambda) 
 [Fredriks prezo fra JavaZone '19](https://github.com/fredriv/serverless-lambda-workshop)  
