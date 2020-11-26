@@ -11,6 +11,9 @@ Ikke AWS spesifikk, men les [Fundamentals of data architecture for data scientis
 - Policies: A *policy* givens certain permissions, like access to a S3-bucket or to invoke a lambda function. The policy will normally be attached to a *group* or directly to a *user*.
 - [Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html): TBD!
 
+### A couple of examples
+
+**TBD** Et par konkrete eksempler. F.eks. for Lambda funksjon som kjører mot S3.
 
 ## Useful links
 [Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html)  
