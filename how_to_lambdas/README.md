@@ -19,7 +19,7 @@ You may create a test event (JSON) to test the Lambda function.
 You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html)
 
 TBD  
-**How to trigger events from S3?**
+**How to trigger events from S3?** --> WIP  
 **How to upload Lambda functions from local .py files?**
 
 
@@ -28,7 +28,7 @@ TBD
 `...`  ....  
 
 ## Useful links
-[Lambdas Hello World](https://aws.amazon.com/getting-started/hands-on/run-serverless-code/) **WIP**  
+[Lambdas Hello World (with further tutorials near the end)](https://aws.amazon.com/getting-started/hands-on/run-serverless-code/) **WIP**  
 [Serverless and lambdas](https://www.serverless.com/aws-lambda)  
 [Fredriks prezo fra JavaZone '19](https://github.com/fredriv/serverless-lambda-workshop)  
 
