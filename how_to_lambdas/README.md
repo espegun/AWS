@@ -31,4 +31,5 @@ TBD
 [Lambdas Hello World (with further tutorials near the end)](https://aws.amazon.com/getting-started/hands-on/run-serverless-code/) **WIP**  
 [Serverless and lambdas](https://www.serverless.com/aws-lambda)  
 [Fredriks prezo fra JavaZone '19](https://github.com/fredriv/serverless-lambda-workshop)  
+[AWS lambdas for data scientists](https://towardsdatascience.com/introduction-to-amazon-lambda-layers-and-boto3-using-python3-39bd390add17)  
 
