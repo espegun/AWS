@@ -1,14 +1,9 @@
 
 # How to Lambda (and Serverless?)
 
-**To be done! Serverless and lambdas (ref Simen prat 2020-11-02)**  
-S3-path sent to function in the handler in the event.  
-Example (see line 38, def copy):  
-https://github.oslo.kommune.no/origo-dataplatform/s3-writer/blob/master/handlers/s3_writer.py  
-Register the function using the `serverless.yml` file (replace `get_boilerplate`).  
 
 ## The purpose
-...  
+AWS Lambda is useful to glue together many different AWS components.
 
 ## How does it work?
 Lambdas typically process events from some event source like S3, DynamoDB or an application.
@@ -18,9 +13,16 @@ You need to specify a handler function or method which will receive the event da
 You may create a test event (JSON) to test the Lambda function.
 You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html)
 
-TBD  
-**How to trigger events from S3?** --> WIP  
-**How to upload Lambda functions from local .py files?**
+
+**TBD**  
+How to trigger events from S3? --> WIP  
+How to upload Lambda functions from local .py files?
+
+**To be done! Serverless and lambdas (ref Simen prat 2020-11-02)**  
+S3-path sent to function in the handler in the event.  
+Example (see line 38, def copy):  
+https://github.oslo.kommune.no/origo-dataplatform/s3-writer/blob/master/handlers/s3_writer.py  
+Register the function using the `serverless.yml` file (replace `get_boilerplate`).  
 
 
 ## Useful commands
