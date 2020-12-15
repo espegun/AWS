@@ -15,8 +15,13 @@ You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonClou
 ### Setup up simple function
 Create a function and a test event using the AWS Console. However, this approach doesn't enable version control or continuous deployment.
 When setup up this for Origo, use the lambda_boilerplate repo. 
-Initiate (or modify) `serverless.yaml`, which configures the lambda function. Replace `service_name` (the name of the lambda function) and `functions` which ....
+Initiate (or modify) `serverless.yaml` in the top directory, which configures the lambda function. Enter (or replace) the content of `service_name` to the name of the lambda function. Enter (or replace) the content of `functions` and include the `handler` function. 
 
+
+To the Origo dataplatform - deploy it (to dev) using `make deploy`.
+
+
+Send an S3-key as content of and `event` to the handler function, e.g. `test/espeng-testing-bucket/opening-hours/Åpningstider (eksempel).xlsx`  
 
 
 
@@ -26,6 +31,7 @@ Initiate (or modify) `serverless.yaml`, which configures the lambda function. Re
 ...TBD Weber p76 -->
 
 **TBD**  
+
 How to trigger events from S3? --> WIP  
 How to upload Lambda functions from local .py files?
 
