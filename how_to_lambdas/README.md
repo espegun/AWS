@@ -1,14 +1,11 @@
 
 # How to Lambda (and Serverless?)
 
-
 ## The purpose
 AWS Lambda is useful to glue together many different AWS components. The functions automatically scale up to handle actual demand.
 
-
-
 ## How does it work?
-Lambdas typically process events from some event source like S3, DynamoDB or an application.
+Lambdas typically process events from some event source like S3, DynamoDB or an application. 
 There are plenty of lambda blueprints (like `hello-world-python`)
 You need to create an execution role which can be used to trigger the Lambda function.
 You need to specify a handler function or method which will receive the event data as an input and will then start to process the event.
@@ -16,7 +13,14 @@ You may create a test event (JSON) to test the Lambda function.
 You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html)
 
 ### Setup up simple function
-Create function and a test event using the AWS Console.
+Create a function and a test event using the AWS Console. However, this approach doesn't enable version control or continuous deployment.
+When setup up this for Origo, use the lambda_boilerplate repo. 
+Initiate (or modify) `serverless.yaml`, which configures the lambda function. Replace `service_name` (the name of the lambda function) and `functions` which ....
+
+
+
+
+[Deploy a Lambda function](https://medium.com/better-programming/deploy-your-first-lambda-function-4f7e54f75001)
 
 ### Expose the lambda function through an API Gateway
 ...TBD Weber p76 -->
@@ -31,6 +35,8 @@ Example (see line 38, def copy):
 https://github.oslo.kommune.no/origo-dataplatform/s3-writer/blob/master/handlers/s3_writer.py  
 Register the function using the `serverless.yml` file (replace `get_boilerplate`).  
 
+
+Setting up a pipeline can be done with TerraForm - (and/or AWS Step Functions).
 
 ## Useful commands
 `...`  ....  
