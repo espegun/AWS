@@ -1,5 +1,6 @@
 
 # How to Lambda (and Serverless?)
+Note - this README is about Lambdas in general. If you want to see how Lambda functions is handled for Origo Dataplatform, check the separate repo describing this.
 
 ## The purpose
 AWS Lambda is useful to glue together many different AWS components. The functions automatically scale up to handle actual demand.
