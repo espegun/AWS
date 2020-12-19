@@ -34,8 +34,19 @@ Send an S3-key as content of and `event` to the handler function, e.g. `test/esp
 
 [Deploy a Lambda function](https://medium.com/better-programming/deploy-your-first-lambda-function-4f7e54f75001)
 
-### Expose the lambda function through an API Gateway
-...TBD Weber p76 -->
+### Deploy a ML model to a Lambda function (and expose it through an API Gateway)
+As done in Weber pages 76-85. It's not CD, but useful to go through.    
+Copy the ML model from `how_to_EC2`.
+`cp ../how_to_EC2/ml_model/model.pkl .`
+`cp ../how_to_EC2/ml_model/train_predict_iris.py .`
+
+
+
+
+
+
+
+
 
 **TBD**  
 
