@@ -19,4 +19,5 @@ Ikke AWS spesifikk, men les [Fundamentals of data architecture for data scientis
 **TBD** Legg til et par konkrete eksempler etterhvert som du gjør de. F.eks. for Lambda funksjon som kjører mot S3.
 
 ## Useful links
+[AWS command line tool](https://aws.amazon.com/cli/)
 [Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html)  
