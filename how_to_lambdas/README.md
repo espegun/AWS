@@ -64,6 +64,10 @@ Register the function using the `serverless.yml` file (replace `get_boilerplate`
 
 Setting up a pipeline can be done with TerraForm - (and/or AWS Step Functions).
 
+## Debugging
+After having deployed a lambda function, you may check failure messages in StepFunctions and press failed step (if a step function sequence is established) or CloudWatch (or within Origo, use the link in `#dataplattform-alerts` after crashes).
+
+
 ## Useful commands
 `...`  ....  
 `...`  ....  
