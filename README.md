@@ -21,3 +21,5 @@ Ikke AWS spesifikk, men les [Fundamentals of data architecture for data scientis
 ## Useful links
 [AWS command line tool](https://aws.amazon.com/cli/)
 [Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html)  
+
+TBD i egen katalog: [Dynamo DB](https://link.medium.com/TmLpxi2h2cb)  
