@@ -27,7 +27,7 @@ To set up a Flask API, simply run the `flaski_api.py`file (port 5000 must be ope
 
 
 ## Useful links
-[First - setup key pair and possibly create a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)<br/>
+[First: Set up key pair and possibly create a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)<br/>
 [Then: Set up and connect to an EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)<br/>
 
 
