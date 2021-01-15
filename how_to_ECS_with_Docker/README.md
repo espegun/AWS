@@ -6,7 +6,9 @@ The purpose of containers is a light-weight, isolated environment where all depe
 
 
 ## How does it work?
-...
+- A *Dockerfile* specifies the dependencies for the container.
+- A *Docker Image* is the result of *building* the Dockerfile, which has all the libraries, setups and code needed to run an application.
+- A *Docker Container* is the *instantiation* of the Docker Image.
 
 ## Useful commands
 `...`  ....  
