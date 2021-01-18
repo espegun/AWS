@@ -40,6 +40,14 @@ def lambda_handler(event, context):
         'body': body
     }
 ```
+*The example above is take from the lambda function `espen_test` in Dataplatform, dev.* 
+The test event is  
+```
+{
+  "name": "Espen",
+  "age": 31
+}
+```
 
 ### Setup up hello world lambda function
 You may create a function and a test event using the AWS Console.  
