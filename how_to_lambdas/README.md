@@ -50,10 +50,12 @@ The test event is
 ```
 
 ### Setup up hello world lambda function
-You may create a function and a test event using the AWS Console.  
-
 [Building Lambda functions with Python](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html)
- 
+
+A Lambda function needs to be assigned an *execution role* which enables it to use other AWS services. Before creating the lambda function; go to IAM, create a role, add one or more *(permission) policies* like `AWSLambdaBasicExecutionRole`  and give the role a name, e.g. `lambda-role`.
+
+Then create the lambda, in the console or otherwise, and set `existing role` to the one created above.
+
 
 ### Triggering a lambda function from S3
 [Tutorial](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html)  
