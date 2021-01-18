@@ -22,19 +22,22 @@ https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
 https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
 
 ### Lambda example: Hello world with the console
-Manually create a lambda handler function in Python using the console. The `event` is the actual function input, while `context` gives descriptions about the environment. Create a test case, this is normally done by specifying a dict-like object which is passed as the `event`. In the end return a dict-like object, preferably with a `statusCode` and a `body`.
+Manually create a lambda handler function in Python using the console. The `event` is the actual function input, while `context` gives descriptions about the environment. Create a test case, this is normally done by specifying a dict-like object which is passed as the `event`. In the end return a dict-like object, preferably with a `statusCode` and a `body`. In some cases (when?), the value of `body` element should be converted to JSON, using `json.dumps(body)`.
 ```
 import json
 
 def lambda_handler(event, context):
     
-    body = ""
-    for key in event.keys():
-        body += event[key]
+    intro = f"Hello, {event['name']}!"
     
+    if event["age"] > 40:
+        body = f"{intro} You are really an old sod now!"
+    else:
+        body = f"{intro} Still young and promissing!"
+
     return {
         'statusCode': 200,
-        'body': json.dumps(body)
+        'body': body
     }
 ```
 
