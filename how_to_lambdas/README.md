@@ -15,10 +15,17 @@ You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonClou
 
 *Lambda functions* are possibly assigned to *Lambda applications* and *Step Functions* (see under console).
 
+https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
+
+
+### Getting started with lambdas
+https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
+
 ### Setup up hello world lambda function
 You may create a function and a test event using the AWS Console.  
 
-[Tutorial](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)  
+[Building Lambda functions with Python](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html)
+ 
 
 ### Triggering a lambda function from S3
 [Tutorial](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html)  
