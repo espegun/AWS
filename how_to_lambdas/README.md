@@ -18,6 +18,8 @@ You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonClou
 ### Setup up hello world lambda function
 You may create a function and a test event using the AWS Console.  
 
+[Tutorial](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)  
+
 ### Triggering a lambda function from S3
 [Tutorial](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html)  
 
