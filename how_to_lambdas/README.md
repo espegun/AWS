@@ -21,6 +21,23 @@ https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
 ### Getting started with lambdas
 https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
 
+### Lambda example: Hello world with the console
+Manually create a lambda handler function in Python using the console. The `event` is the actual function input, while `context` gives descriptions about the environment. Create a test case, this is normally done by specifying a dict-like object which is passed as the `event`. In the end return a dict-like object, preferably with a `statusCode` and a `body`.
+```
+import json
+
+def lambda_handler(event, context):
+    
+    body = ""
+    for key in event.keys():
+        body += event[key]
+    
+    return {
+        'statusCode': 200,
+        'body': json.dumps(body)
+    }
+```
+
 ### Setup up hello world lambda function
 You may create a function and a test event using the AWS Console.  
 
