@@ -15,8 +15,17 @@ You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonClou
 
 *Lambda functions* are possibly assigned to *Lambda applications* and *Step Functions* (see under console).
 
-### Setup up simple function
+### Setup up hello world lambda function
 You may create a function and a test event using the AWS Console.  
+
+### Triggering a lambda function from S3
+[Tutorial](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html)  
+
+
+### Deploying a lambda function (old notes below)
+
+*Not finished stuff**
+
 However, this approach doesn't enable version control or continuous deployment. When setup up this for Origo, use the lambda_boilerplate repo. 
 Initiate (or modify) `serverless.yaml` in the top directory, which configures the lambda function. Enter (or replace) the content of `service_name` to the name of the lambda function. Enter (or replace) the content of `functions` and include the `handler` function. 
 
@@ -30,6 +39,8 @@ Send an S3-key as content of and `event` to the handler function, e.g. `test/esp
   "s3_dst": "test/espeng-testing-bucket/opening-hours/output.json",
 }
 ```
+
+
 
 
 [Deploy a Lambda function](https://medium.com/better-programming/deploy-your-first-lambda-function-4f7e54f75001)
