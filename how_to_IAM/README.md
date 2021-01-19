@@ -18,7 +18,5 @@
 `...`  ....  
 
 ## Useful links
-[Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html)  
-
-
+[Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 
