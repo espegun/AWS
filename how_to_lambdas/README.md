@@ -49,13 +49,20 @@ The test event is
 }
 ```
 
+### Deploy from zip archive
+https://docs.aws.amazon.com/lambda/latest/dg/python-package.html
+
+### Deploy from container image
+https://docs.aws.amazon.com/lambda/latest/dg/python-image.html
+
+
+
 ### Setup up hello world lambda function
 [Building Lambda functions with Python](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html)
 [Blank python lambda template](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/blank-python)  
 A Lambda function needs to be assigned an *execution role* which enables it to use other AWS services. Before creating the lambda function; go to IAM, create a role, add one or more *(permission) policies* like `AWSLambdaBasicExecutionRole`  and give the role a name, e.g. `lambda-role`.
 
 Then create the lambda, in the console or otherwise, and set `existing role` to the one created above.
-
 
 ### Triggering a lambda function from S3
 [Tutorial](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html)  
