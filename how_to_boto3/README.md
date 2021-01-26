@@ -28,7 +28,7 @@ for instance in resp["Instances"]:
 
 
 
-## Useful commands
+## S3
 Read a text file from S3 (to memory)
 ```
 S3_key = "something/something/log.txt"
