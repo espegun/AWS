@@ -6,6 +6,11 @@ Connect to AWS-service using Python.
 ## How does it work?
 ...
 
+## Setup
+In the AWS console, go to IAM and create a user with *Programmatic access* and possible the *AdministratorAccess* existing policy. You now have the `Access key ID`(user id) and the `Secret access key`(password). 
+Install boto3 according to the instructions at the [repo](https://github.com/boto/boto3). 
+Setup credentials for the user with programmatic access in `~/.aws/credentials` og `~/.aws/config`.
+
 ## Useful commands
 Read a text file from S3 (to memory)
 ```
