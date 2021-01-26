@@ -13,7 +13,7 @@ Launch an instance and add the key pair and security group (may be modified) alr
 `ssh` to the instance, refering to the locally stored key.
 
 ## Useful commands
-Remember, you can also use [boto3](https://github.com/espegun/AWS/tree/main/how_to_boto3#ec2-instances) to set set up and work against an instance.
+Remember, you can also use [boto3](https://github.com/espegun/AWS/tree/main/how_to_boto3#ec2-instances) to instanciate and work against an instance.
 
 ### SSH to the instance
 `ssh -i /folder/EC2_test_instance.pem ec2-user@54.123.123.123` SSH to the instance. `ec2-user` is the default user @ the *Public IPv4*.<br/>
