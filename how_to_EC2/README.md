@@ -5,6 +5,8 @@ Like most cloud services, it's easy to get the power and scalability you need, a
 Use it to host a website, an API or train models.
 
 ## How does it work?
+The [instance type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) defines the hardware used for the instance. The [AMI (Amazon Machine Image)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ComponentsAMIs.html) defines the OS and software.
+
 You need to generate and use a [key pair](https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#KeyPairs:) to log in to your instance securely. First generate a private key, save it a safe place and `chmod 400 file.pem` so only you can read it.<br/>
 Create a security group - with rules for inbound HTTP, HTTPS and SSH (your IP only), Jupyter (8888, custom TCP).<br/>
 Launch an instance and add the key pair and security group (may be modified) already initiated.<br/>
