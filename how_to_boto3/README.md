@@ -13,7 +13,7 @@ Setup credentials for the user with programmatic access in `~/.aws/credentials` 
 
 ## EC2 instances
 [EC2 docs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html)  
-Lanuch an instance
+Lanuch an instance. Find the AMI (`ImageId`) in the console.
 ```
 import boto3
 client = boto3.client("ec2")
