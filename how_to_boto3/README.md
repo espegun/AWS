@@ -82,5 +82,6 @@ keys = [obj.key for obj in objects if obj.key.endswith(".json")]
 ```
 
 ## Useful links
+[boto3 at readthedocs](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)  
 [AWS at RealPython](https://realpython.com/lessons/python-boto3-aws-s3-overview/)
 [Resource, client and session](https://stackoverflow.com/questions/42809096/difference-in-boto3-between-resource-client-and-session) <-- TBD!  
