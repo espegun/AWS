@@ -11,6 +11,23 @@ In the AWS console, go to IAM and create a user with *Programmatic access* and p
 Install boto3 according to the instructions at the [repo](https://github.com/boto/boto3).  
 Setup credentials for the user with programmatic access in `~/.aws/credentials` og `~/.aws/config`.  
 
+## EC2 instances
+[EC2 docs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html)  
+Lanuch an instance
+```
+import boto3
+client = boto3.client("ec2")
+
+resp = client.run_instances(ImageId="ami-467ca739",
+                     InstanceType="t2.micro",
+                     MinCount=1,
+                     MaxCount=1)
+for instance in resp["Instances"]:
+    print(instance["InstanceId"])
+```
+
+
+
 ## Useful commands
 Read a text file from S3 (to memory)
 ```
