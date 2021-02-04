@@ -2,7 +2,7 @@
 
 ## 
 Note that this repo covers the stuff which is generic for boto3. For code which is specific to special technogies, check those repos.  
-boto3 with EC2  
+[boto3 with EC2](https://github.com/espegun/AWS/blob/main/how_to_EC2/README.md#boto3)  
 boto3 with S3  
 boto3 with DynamoDB  
 
