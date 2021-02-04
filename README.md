@@ -14,7 +14,7 @@ TBD i egen katalog: [Dynamo DB](https://link.medium.com/TmLpxi2h2cb) + [Docs og 
 Ikke AWS spesifikk, men les [Fundamentals of data architecture for data scientists](https://towardsdatascience.com/fundamentals-of-data-architecture-to-help-data-scientists-understand-architectural-diagrams-better-7bd26de41c66).  
 
 ## Debugging tips
-* Minimize online debugging: Test, test, test!
+* Minimize online debugging: Add plenty of tests, including for the handler.
 * Look at the log from the failing process in **Step Functions** in the console.
 * Remember that data may be available **DynamoDB**.
 * 
