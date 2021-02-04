@@ -13,7 +13,6 @@ Launch an instance and add the key pair and security group (may be modified) alr
 `ssh` to the instance, refering to the locally stored key.
 
 ## Useful commands
-Remember, you can also use [boto3](https://github.com/espegun/AWS/tree/main/how_to_boto3#ec2-instances) to instanciate and work against an instance.
 
 ### SSH to the instance
 `ssh -i /folder/EC2_test_instance.pem ec2-user@54.123.123.123` SSH to the instance. `ec2-user` is the default user @ the *Public IPv4*.<br/>
@@ -27,6 +26,8 @@ To update Python, install Jupyter, see Weber p11-12.<br/>
 `jupyter notebook --ip <private IPv4>`   Set the instance running, it will return a token. Replace the private with public IP and paste in the browser (port 8888 must be open for inbound traffic).<br/>
 To set up a Flask API, simply run the `flaski_api.py`file (port 5000 must be open for inbound traffic).<br/>
 
+## Boto3
+Remember, you can also use [boto3](https://github.com/espegun/AWS/tree/main/how_to_boto3#ec2-instances) to instanciate and work against an instance.
 
 
 ## Useful links
