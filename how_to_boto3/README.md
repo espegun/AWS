@@ -1,5 +1,12 @@
 # How to boto3
 
+## 
+Note that this repo covers the stuff which is generic for boto3. For code which is specific to special technogies, check those repos.  
+boto3 with EC2  
+boto3 with S3  
+boto3 with DynamoDB  
+
+
 ## The purpose
 Connect to AWS-service using Python.
 
