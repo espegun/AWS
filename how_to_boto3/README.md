@@ -13,6 +13,9 @@ Connect to AWS-service using Python.
 ## How does it work?
 ...
 
+`resource` is more high-level than `client`, use the former if possible.
+
+
 ## Setup
 In the AWS console, go to IAM and create a user with *Programmatic access* and possible the *AdministratorAccess* existing policy. You now have the `Access key ID`(user id) and the `Secret access key`(password).  
 Install boto3 according to the instructions at the [repo](https://github.com/boto/boto3).  
