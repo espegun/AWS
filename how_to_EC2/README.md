@@ -33,8 +33,12 @@ Remember, you can also use [boto3](https://github.com/espegun/AWS/tree/main/how_
 [EC2 docs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html)  
 Lanuch an instance. Find the AMI (`ImageId`) in the console.
 
-Se kode - ta inn viktigste kommandoer hit.
-
+Start, stop and terminate instances.  
+```
+client.start_instances(InstanceIds=list_of_id)
+client.stop_instances(InstanceIds=list_of_id)
+client.terminate_instances(InstanceIds=list_of_id)
+```
 
 ## Useful links
 [First: Set up key pair and possibly create a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)<br/>
