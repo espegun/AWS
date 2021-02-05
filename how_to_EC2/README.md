@@ -28,6 +28,10 @@ To set up a Flask API, simply run the `flaski_api.py`file (port 5000 must be ope
 
 ## Boto3
 Remember, you can also use [boto3](https://github.com/espegun/AWS/tree/main/how_to_boto3#ec2-instances) to instanciate and work against an instance.
+[EC2 docs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html)  
+Lanuch an instance. Find the AMI (`ImageId`) in the console.
+
+Se kode - ta inn viktigste kommandoer hit.
 
 
 ## Useful links
