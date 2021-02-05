@@ -15,4 +15,5 @@
 
 
 ## Useful links
-[Description](https://www.cisco.com)<br />
+[RealPython: boto3 and S3 Description](https://realpython.com/python-boto3-aws-s3/)  
+
