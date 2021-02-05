@@ -1,4 +1,4 @@
-# How to <SOMETHING>
+# How to DynamoDB
 
 ## The purpose
 ...
@@ -7,8 +7,11 @@
 ...
 
 ## Useful commands
-`...`  .... <br />
-`...`  .... <br />
+`...`  ....  
+`...`  ....  
+
+## boto3
+[Example](...)
 
 ## Useful links
-[Description](https://www.cisco.com)<br />
+[Description](https://www.cisco.com)  
