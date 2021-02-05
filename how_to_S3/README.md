@@ -1,4 +1,4 @@
-# How to <SOMETHING>
+# How to S3
 
 ## The purpose
 ...
