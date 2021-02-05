@@ -3,9 +3,9 @@
 ## 
 Note that this repo covers the stuff which is generic for boto3. For code which is specific to special technogies, check those repos.  
 [boto3 with EC2](https://github.com/espegun/AWS/blob/main/how_to_EC2/README.md#boto3)  
+boto3 with Lambda  
 boto3 with S3  
 boto3 with DynamoDB  
-
 
 ## The purpose
 Connect to AWS-service using Python.
@@ -18,20 +18,6 @@ In the AWS console, go to IAM and create a user with *Programmatic access* and p
 Install boto3 according to the instructions at the [repo](https://github.com/boto/boto3).  
 Setup credentials for the user with programmatic access in `~/.aws/credentials` og `~/.aws/config`.  
 
-## EC2 instances
-[EC2 docs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html)  
-Lanuch an instance. Find the AMI (`ImageId`) in the console.
-```
-import boto3
-client = boto3.client("ec2")
-
-resp = client.run_instances(ImageId="ami-467ca739",
-                     InstanceType="t2.micro",
-                     MinCount=1,
-                     MaxCount=1)
-for instance in resp["Instances"]:
-    print(instance["InstanceId"])
-```
 
 
 
