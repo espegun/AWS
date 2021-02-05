@@ -5,7 +5,7 @@ Note that this repo covers the stuff which is generic for boto3. For code which 
 [boto3 with EC2](https://github.com/espegun/AWS/blob/main/how_to_EC2/README.md#boto3)  
 boto3 with Lambda  
 [boto3 with S3](https://github.com/espegun/AWS/tree/main/how_to_S3#boto3)  
-boto3 with DynamoDB  
+[boto3 with DynamoDB](https://github.com/espegun/AWS/tree/main/how_to_DynamoDB#boto3)    
 
 ## The purpose
 Connect to AWS-service using Python.
