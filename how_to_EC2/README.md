@@ -27,10 +27,8 @@ To update Python, install Jupyter, see Weber p11-12.<br/>
 To set up a Flask API, simply run the `flaski_api.py`file (port 5000 must be open for inbound traffic).<br/>
 
 ## Boto3
+[Boto3 EC2 docs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html)  
 [Examples](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/ec2-examples.html)  
-
-Remember, you can also use [boto3](https://github.com/espegun/AWS/tree/main/how_to_boto3#ec2-instances) to instantiate and work against an instance.
-[EC2 docs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html)  
 
 `client = boto3.client("ec2")`
 
