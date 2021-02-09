@@ -35,9 +35,10 @@ To set up a Flask API, simply run the `flaski_api.py`file (port 5000 must be ope
 Launch an instance. Find or generate a suitable AMI (`ImageId`) in the console.  
 `resp = client.run_instances(ImageId="ami-0bb3fad3c0286ebd5", InstanceType="t2.micro", MinCount=1, MaxCount=1)`
 
-Start, stop and terminate instances.  
+Useful functions for the instances. Check documentation [here](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#client).
 ```
 client.start_instances(InstanceIds=list_of_id)
+resp = client.describe_instances(InstanceIds=list_of_id)
 client.stop_instances(InstanceIds=list_of_id)
 client.terminate_instances(InstanceIds=list_of_id)
 ```
