@@ -40,4 +40,23 @@ resp = client.terminate_instances(InstanceIds=list_of_id)
 for instance in resp["TerminatingInstances"]:
     print(instance["InstanceId"])
 
+print("Describing instances")
+resp = client.describe_instances(InstanceIds=list_of_id)
+for res in resp["Reservations"]:
+    for instance in res["Instances"]:
+        print(instance["InstanceId"])
+
+print("Filtering instances")
+resp = client.describe_instances(Filters=[{"Name": "instance-state-name",
+                                           "Values": ["terminated", "stopped"]}
+                                          ]
+                                 )
+# Instances may also be given named tags with values, you can then filter on "Name": "tag:Tag_name" with possible Values.
+
+
+for res in resp["Reservations"]:
+    for instance in res["Instances"]:
+        print(instance["InstanceId"])
+
+
 print("Husk å slette instanser! $$$$$$$$")
