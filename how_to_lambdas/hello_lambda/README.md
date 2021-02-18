@@ -1,3 +1,17 @@
+https://www.serverless.com/framework/docs/providers/aws/examples/hello-world/python/
+# How to deploy and test the minimum lambda
+Step 2 - deploy
+`sls deploy`
+Then check that the function is available in the AWS console.
+
+Step 3 - Invoke deployed function
+`sls invoke -f my-function`
+
+
+
+
+OLD STUFF BELOW
+
 # The minimum lambda
 Deployed as described by Weber page 74-85.  
 This example uses Origo's AWS account.
@@ -15,4 +29,4 @@ Copy the zippde lambda to S3:
 
 
 
-BØR KUNNE DOCKER FØRST. DESSUTEN WEBER ER UTDATERT. BRUKER MEDIUM ELLER AWS DIREKTE.
+BØR KUNNE DOCKER FØRST. DESSUTEN WEBER ER UTDATERT. BRUKER MEDIUM ELLER AWS DIREKTE
