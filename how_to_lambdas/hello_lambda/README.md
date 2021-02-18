@@ -15,9 +15,9 @@ Step 3 - Invoke deployed function
 
 
 
-OLD STUFF BELOW
+# OLD STUFF BELOW
 
-# The minimum lambda
+The minimum lambda
 Deployed as described by Weber page 74-85.  
 This example uses Origo's AWS account.
 
