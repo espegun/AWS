@@ -1,4 +1,8 @@
 https://www.serverless.com/framework/docs/providers/aws/examples/hello-world/python/
+
+# Achtung - to be done, use Fredriks demo
+make it a valid Serverless service directory first  
+
 # How to deploy and test the minimum lambda
 Step 2 - deploy  
 `sls deploy`  
