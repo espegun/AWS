@@ -1,10 +1,7 @@
-# https://www.serverless.com/framework/docs/providers/aws/examples/hello-world/python/
-# Step 2 - deploy
-sls deploy
-# Check that the function is available in the AWS console.
-
-# Step 3 - Invoke deployed function
-sls invoke -f my-function
+Deploy
+`sls deploy`  
+Test  
+`https://07xnk0295b.execute-api.eu-west-1.amazonaws.com/dev/hello/Espen `  Test GET. Base URL will have to be modified.  
 
 
 
