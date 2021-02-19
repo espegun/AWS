@@ -133,6 +133,7 @@ After having deployed a lambda function, you may check failure messages in StepF
 [Lambda developer guide with code repo](https://github.com/awsdocs/aws-lambda-developer-guide)    
 
 [Serverless and lambdas](https://www.serverless.com/aws-lambda)  
+[Spec serverless.yml for AWS](https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml/)  
 [Deply Python package on AWS lambda](https://medium.com/swlh/tips-to-deploy-python-package-on-aws-lambda-fbf4bed4dc87)  
 [Fredriks prezo fra JavaZone '19](https://github.com/fredriv/serverless-lambda-workshop)  
 [AWS lambdas for data scientists](https://towardsdatascience.com/introduction-to-amazon-lambda-layers-and-boto3-using-python3-39bd390add17)  
