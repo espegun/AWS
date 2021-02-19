@@ -1,0 +1,30 @@
+# https://www.serverless.com/framework/docs/providers/aws/guide/deploying/
+# https://www.serverless.com/framework/docs/providers/aws/events/apigateway/#simple-http-endpoint
+# https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml/
+
+frameworkVersion: ">=2.0.0"
+
+service: basic-http
+
+# Some of the arguments under provider can also be given when deploying,
+# e.g. sls deploy --stage prod --region eu-west-1
+provider:
+  name: aws
+  stage: dev
+  region: eu-west-1
+  runtime: python3.8
+
+functions:
+  hello_get:  # The full function name in the AWS console will be {service_name}-{stage}-{function_name} 
+    handler: handler.hello_get  # Reference to a function in a Python (handler) file
+    events:
+      - http:  # Note: Need 4 space indent here, not the normal 2
+          path: hello/{name}
+          method: get
+  hello_post:
+    handler: handler.hello_post
+    events:
+      - http:  # Note: Need 4 space indent here, not the normal 2
+          path: hello
+          method: post 
+
