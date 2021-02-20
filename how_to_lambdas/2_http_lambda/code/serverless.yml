@@ -1,5 +1,5 @@
 # https://www.serverless.com/framework/docs/providers/aws/guide/deploying/
-# https://www.serverless.com/framework/docs/providers/aws/events/apigateway/#simple-http-endpoint
+# https://www.serverless.com/framework/docs/providers/aws/events/apigateway/#simple-http-endpoint  Simple HTTP endpoint
 # https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml/
 
 frameworkVersion: ">=2.0.0"
