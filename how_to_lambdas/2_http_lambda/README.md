@@ -1,3 +1,4 @@
+# Put up a lambda function as a simple HTTP-endpoint
 ## Deploy  
 `sls deploy`  
 ## Test  
