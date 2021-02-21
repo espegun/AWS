@@ -5,7 +5,7 @@ To be deploy a function to an AWS account, you need to be set up with valid data
 `$ sls deploy`  
 
 ## Test
-Now use the AWS console that it or has been updated or simple invokje the function from the command line.
+Now use the AWS console that it or has been updated or simple invokje the function from the command line.  
 `$ sls invoke -f my-function`  
 
 https://www.serverless.com/framework/docs/providers/aws/examples/hello-world/python/
