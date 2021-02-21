@@ -1,7 +1,7 @@
 This 
 
 ## Deploy to AWS
-To be deploy a function to an AWS account, you need to be set up with valid data in `~/.aws/credentials` and `~/.aws/config`, in addition to matching `AWS_PROFILE` environment variable. 
+To be deploy a function to an AWS account, you need to be set up with valid data in `~/.aws/credentials` and `~/.aws/config`, in addition to matching `AWS_PROFILE` environment variable.  
 `$ sls deploy`  
 
 ## Test
