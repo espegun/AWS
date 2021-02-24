@@ -4,7 +4,8 @@
 Easy to move projects between different platforms.
 
 ## How does it work?
-...
+The [command structure](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-commandstructure.html) is straight forward:  
+`$ aws <command> <subcommand> [options and parameters]`  
 
 ## Useful commands
 `$ aws s3 ls s3://bucket_name/folder/` Read folder content.  
