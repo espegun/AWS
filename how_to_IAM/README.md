@@ -13,7 +13,7 @@
 - [Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html): Like an *user*, a *role* is an AWS identity which har certain *policies*. A *role* does not have passwords or access keys, but can be temporarily given to someone who needs it for a session (the user's normal permissions are not active during the session). Roles can be assumed by IAM users in the same or a different AWS-account, or provided external users with some autentication method. Permissions to use the *role* is given in the *trust policy* from a *trusting account* to members of a *trusted account* which can assume the role. **TBD Example** 
 
 Some examples:  
-- A lambda function needs to be given a *role* which has the `AWSLambdaBasicExecutionRole` *policy* which has the *permissions* that the function needs to write logs to CloudWatch Logs. Also see [this example](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html), where the lambda is given a role which has a policy which also allow R/W to certain S3 buckets.
+- A lambda function needs to be given a *role* which has the `AWSLambdaBasicExecutionRole` *policy* which has the *permissions* that the function needs to write logs to CloudWatch Logs.  Also see [this example](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html), where the lambda is given a *role* which has a *policy* which also has the *permissions* required for the lambda to read and write to certain S3 buckets.
 - ...
 
 
