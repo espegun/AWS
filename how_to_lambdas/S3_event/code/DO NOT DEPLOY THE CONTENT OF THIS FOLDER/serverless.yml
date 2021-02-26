@@ -19,7 +19,7 @@ provider:
 
 functions:
   get_key:  # The full function name in the AWS console will be {service_name}-{stage}-{function_name}
-    handler: handler.read_and_write_filesize  # Reference to a function in a Python (handler) file
+    handler: handler.react_to_file_event  # Reference to a function in a Python (handler) file
     events:
       - s3:  # Note: Need 4 space indent here, not the normal 2
           bucket: aws-basics
