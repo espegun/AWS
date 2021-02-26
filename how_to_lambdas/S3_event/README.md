@@ -2,11 +2,15 @@
 ## Deploy  
 `sls deploy`  
 ## Test  
-...
+`aws s3 cp uploaded_file.txt s3://aws-basics/`
 
-The current setup in `code` may be correct, but the Lambda does not have access to RW S3.  
-https://aws.amazon.com/premiumsupport/knowledge-center/lambda-execution-role-s3-bucket/  
-Bruk gjerne noen templater i konsollen for å finne ut hvilke policy og sånn som må til.  
+The lambda must be given a suitable EXECUTION ROLE. 
+https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html
+Also see this example, where the lambda is given a role which has a policy which
+also has the permissions required for the lambda to read and write to certain S3 buckets.
+
+
+
 Se også Weber 76-84.  
 
 
