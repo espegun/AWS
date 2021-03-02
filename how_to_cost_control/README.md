@@ -14,6 +14,8 @@ By default, only root users have cost access.
 Quoted:  
 *If you use the AWS Free Tier, Billing and Cost Management automatically provides AWS Free Tier usage alerts via AWS Budgets to track your free tier usage. Billing and Cost Management notifies you when you go over the free tier limits or are forecasted to go over the free tier limits. AWS sends these notifications to the email that you used to create your AWS account.* 
 
+https://aws.amazon.com/support
+
 ## Useful commands
 `...`  ....  
 
@@ -37,6 +39,6 @@ Your AWS account 881179186002 has exceeded 85% of the usage limit for one or mor
 |AWSLambda|1000000.0 Requests 	                |1000000.0 Requests|1,000,000 free requests per month for AWS Lambda         |
 |AmazonS3 |2000.0 Requests 	                    |2000.0 Requests 	 |2,000 Put, Copy, Post or List Requests of Amazon S3      |
 
-To learn more about your AWS Free Tier usage, please access the AWS Billing & Cost Management Dashboard. You can find more information on AWS Free Tier here.
+To learn more about your AWS Free Tier usage, please access the [AWS Billing & Cost Management Dashboard](https://www.amazon.com/gp/f.html?C=1MBFAF2CMECWR&M=urn:rtn:msg:202102242041384a407d792e6048319585ac6d3da0p0na&R=2LO33A3NREI41&T=C&U=https%3A%2F%2Fconsole.aws.amazon.com%2Fbilling%2Fhome%3Fref_%3Dpe_32559890_475255360%23%2Fbills%3F&H=FX1UFFIZFVIERWLDPMZR51ZAAAIA&ref_=pe_32559890_475255360). You can find more information on AWS Free Tier [here](https://www.amazon.com/gp/f.html?C=1MBFAF2CMECWR&M=urn:rtn:msg:202102242041384a407d792e6048319585ac6d3da0p0na&R=1O21SVZRX5QYA&T=C&U=https%3A%2F%2Faws.amazon.com%2Ffree%2F%3Fref_%3Dpe_32559890_475255360&H=OYNZIXEMEX7WOF3ZPWTBTG7UVAGA&ref_=pe_32559890_475255360).
 
-This alert is provided by AWS Budgets. AWS automatically tracks your service usage and will alert you if you have reached 85% of the usage limit for one or more AWS Free Tier-eligible services. To unsubscribe from these alerts or to change the email address to which you would like your alerts to be sent, please visit the Cost Management Preferences.
+This alert is provided by [AWS Budgets](https://www.amazon.com/gp/f.html?C=1MBFAF2CMECWR&M=urn:rtn:msg:202102242041384a407d792e6048319585ac6d3da0p0na&R=3JXNMM0I5ZV56&T=C&U=https%3A%2F%2Fconsole.aws.amazon.com%2Fbilling%2Fhome%3F%2F%26ref_%3Dpe_32559890_475255360%23%2Fbudgets&H=KUDJ4M6PZKVO1DYG1CGP0ZDOP28A&ref_=pe_32559890_475255360). AWS automatically tracks your service usage and will alert you if you have reached 85% of the usage limit for one or more AWS Free Tier-eligible services. To unsubscribe from these alerts or to change the email address to which you would like your alerts to be sent, please visit the [Cost Management Preferences](https://www.amazon.com/gp/f.html?C=1MBFAF2CMECWR&M=urn:rtn:msg:202102242041384a407d792e6048319585ac6d3da0p0na&R=6O975VF26BRM&T=C&U=https%3A%2F%2Fconsole.aws.amazon.com%2Fbilling%2Fhome%3Fref_%3Dpe_32559890_475255360%23%2Fpreference&H=UCAOZD3UTFGIA0HABJCC8AQTMD8A&ref_=pe_32559890_475255360).
