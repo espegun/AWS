@@ -5,7 +5,7 @@ Monitor, raise alarms and avoid spending more than expected, especially as a res
 
 *Interestingly, this folder was initiated shortly after the $812 cost occuring overnight in Feb 2021. Luckily creditted by AWS.* 
 
-Learned: When your received a cost notification, *do not assume* it's an EC2 micro instance still running 
+Learned: When your received a cost notification, *do not assume* it's an EC2 micro instance still running. But also - these alert does not happen in real time. Check usage stats after setting up a lambda or similar jobs.
 
 
 ## How does it work?
