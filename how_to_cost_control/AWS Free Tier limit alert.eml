@@ -1,0 +1,245 @@
+Delivered-To: espen.gunnarsen@gmail.com
+Received: by 2002:ac8:43cc:0:0:0:0:0 with SMTP id w12csp828768qtn;
+        Wed, 24 Feb 2021 12:41:39 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJxZnjs7SYgGUNujJuhCD3kLPJO+tBL4zKuBDw8FC1hUIL+iFtE0fmq27StGvcqCkZdinlvs
+X-Received: by 2002:a05:620a:a19:: with SMTP id i25mr32996418qka.136.1614199299672;
+        Wed, 24 Feb 2021 12:41:39 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1614199299; cv=none;
+        d=google.com; s=arc-20160816;
+        b=IjwKar1Q/81llIEZ0XO7AFxteMs4RMe3O2LI1Y6v3u1tCM+3IRbBmZcFZzeloeEnI6
+         uxX3F0qONrhsHDuwmPMug7P6G31jlTy6Stm08wWcWN5SJVuA9XhKY95rm55DsLt18nhB
+         J3Q9uEJbLDLPrujC9iQsY26kmj1lo0Rtq2n/BtadEl+4dPd2EamyZZiNfRHGuRA08WhO
+         VEg0FRFX15GIvB5Hdn8yGF8BP4PC9mY9As8Cz2FfW5VyUqfszeZ1JNHVEy0bJCVRUCyC
+         Md6dDm8SKqCl/IuP0D6EFGvzOoE8trmpU95KBijZFgxP0pUBjBA3GSZXzl1Cavbk3+/H
+         Qgbg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:date:bounces-to:mime-version:subject:message-id:to:from
+         :dkim-signature:dkim-signature;
+        bh=NDSS9XbzGCfQNpxuxC7JjJgG5h/QZdHdZ1a9zbCeTsE=;
+        b=FSxGG9MGZjit2Ysla+0m9JgK2w+CruJVhcJE6NCO2RspLm0gFxhlO7bYV7SkT4vCUk
+         FMHIEbbmPSo2AzSutmv0AHJXqNHeGtqcEfER9SNCxsB45b8m8csepRs9V32fvE7kiHJI
+         SYnX+KYXHDYuu9iVEiFWaxEqp2+f0lFxrcRmaRUKRIoVuuC5/QUG9xaEUGocAFLdrGZ8
+         JL9ELTJSGm4dA0w1J1v2Dg9oVEm8/k6qSYfivshSkw8/mHZyJrNpDoE5dA9XRXSNbznM
+         n2/R297fsFO72RmjnYLTI8pKObCgOgDl1bkHivh8dako1CzLkx1lYDJVVXxRgTytBxhH
+         CT+g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@amazon.com header.s=yg4mwqurec7fkhzutopddd3ytuaqrvuz header.b=PvNoWvtv;
+       dkim=pass header.i=@amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=NmkShEeS;
+       spf=pass (google.com: domain of 202102242041384a407d792e6048319585ac6d3da0p0na@bounces.amazon.com designates 54.240.13.63 as permitted sender) smtp.mailfrom=202102242041384a407d792e6048319585ac6d3da0p0na@bounces.amazon.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=amazon.com
+Return-Path: <202102242041384a407d792e6048319585ac6d3da0p0na@bounces.amazon.com>
+Received: from a13-63.smtp-out.amazonses.com (a13-63.smtp-out.amazonses.com. [54.240.13.63])
+        by mx.google.com with ESMTPS id x17si1743473qtw.361.2021.02.24.12.41.39
+        for <espen.gunnarsen@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Wed, 24 Feb 2021 12:41:39 -0800 (PST)
+Received-SPF: pass (google.com: domain of 202102242041384a407d792e6048319585ac6d3da0p0na@bounces.amazon.com designates 54.240.13.63 as permitted sender) client-ip=54.240.13.63;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@amazon.com header.s=yg4mwqurec7fkhzutopddd3ytuaqrvuz header.b=PvNoWvtv;
+       dkim=pass header.i=@amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=NmkShEeS;
+       spf=pass (google.com: domain of 202102242041384a407d792e6048319585ac6d3da0p0na@bounces.amazon.com designates 54.240.13.63 as permitted sender) smtp.mailfrom=202102242041384a407d792e6048319585ac6d3da0p0na@bounces.amazon.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=amazon.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=yg4mwqurec7fkhzutopddd3ytuaqrvuz; d=amazon.com; t=1614199299;
+	h=From:To:Message-ID:Subject:MIME-Version:Content-Type:Date;
+	bh=t5wo3tYUCtza7b3U7eA2VF1pbrpu3YrNvCIVfL28hH4=;
+	b=PvNoWvtvwua9PV368Zc0EC0KJl64Lqz2cW9nQRulf7rwboDO1RvlOuZ+XKV+I9x/
+	4AVsnCLSq3eER/S7GAz7zI58dVtRz3zQjmbW0RUf7T6jaCUuBk0knc066Xl2tMpAdI5
+	ondyoSNONfkqjCGi0Ac52TpgjhZMs7QFq81KFfLs=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1614199299;
+	h=From:To:Message-ID:Subject:MIME-Version:Content-Type:Date:Feedback-ID;
+	bh=t5wo3tYUCtza7b3U7eA2VF1pbrpu3YrNvCIVfL28hH4=;
+	b=NmkShEeSuMx99lT7ioWK4bTIBXbw83U2HseBc9xT93fkXwQO07Raszom5v+ulOpo
+	VjSO9y0KpFwsty+doiwb2xki27B3lwTgcguNdQWlFH+iwt3WAwBLPynS2aOqqETiOGl
+	vRboqrrXV81snuCBK1qxZ8I40+yIm2SydWKftQQE=
+From: no-reply-aws@amazon.com
+To: espen.gunnarsen@gmail.com
+Message-ID: <01000177d5c69ba9-84d1b9f0-fc45-48d9-b393-58b18a68aaf0-000000@email.amazonses.com>
+Subject: AWS Free Tier limit alert
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1026669_483662817.1614199298982"
+X-AMAZON-MAIL-RELAY-TYPE: notification
+Bounces-to: 202102242041384a407d792e6048319585ac6d3da0p0na@bounces.amazon.com
+X-AMAZON-METADATA: CA=C3ISWB1Z0U3QGE
+X-Original-MessageID: <urn.rtn.msg.202102242041384a407d792e6048319585ac6d3da0p0na@1614199298982.rtn-svc-na-back-c42xl1f-9afe0d64.us-east-1.amazon.com>
+Date: Wed, 24 Feb 2021 20:41:38 +0000
+X-SES-Outgoing: 2021.02.24-54.240.13.63
+Feedback-ID: 1.us-east-1.ZHcGJK6s+x+i9lRHKog4RW3tECwWIf1xzTYCZyUaiec=:AmazonSES
+
+------=_Part_1026669_483662817.1614199298982
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+AWS Free Tier usage limit alerting via AWS Budgets           02/24/2021
+
+Dear AWS Customer, 
+
+Your AWS account 881179186002 has exceeded 85% of the usage limit for one or more AWS Free Tier-eligible services for the month of February.
+
+To learn more about your AWS Free Tier usage, please access the AWS Billing & Cost Management Dashboard at https://console.aws.amazon.com/billing/home?#/bills. You can find more information on AWS Free Tier here: https://aws.amazon.com/free/.
+
+This alert is provided by AWS Budgets. AWS automatically tracks your service usage and will alert you if you have reached 85% of the usage limit for one or more AWS Free Tier-eligible services. To unsubscribe from these alerts or to change the email address to which you would like your alerts to be sent, please visit the Cost Management Preferences at https://console.aws.amazon.com/billing/home#/preference.
+------=_Part_1026669_483662817.1614199298982
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+    <style type="text/css">
+        table {
+            width:100%; 
+            font-family: Helvetica, Arial,sans-serif;
+        }
+        
+        .tableCell {
+            border: 1px solid #CCCCCC;
+            padding:5px 10px;
+        }
+        
+        p.footer {
+            font-family: Helvetica, Arial,sans-serif;
+            font-size:6pt;
+            color:#000000;
+            text-align:justify
+        }
+    </style>
+    <body><img width="1" height="1" src="https://www.amazon.com/gp/r.html?C=1MBFAF2CMECWR&M=urn:rtn:msg:202102242041384a407d792e6048319585ac6d3da0p0na&R=Q6TCHSW8XM0D&T=O&U=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&H=IWRMHHRGXORRTZR2WVBZ7CMB2E8A&ref_=pe_32559890_475255360_opens" />
+       <table>
+           <tr>
+               <td align="right">
+                   <img style="display:block;" height=35 src="https://d1.awsstatic.com/logos/aws-logo/full-color/AWS-Logo_Full-Color_100x60.5e9a396f44e8a57089a6c62488cd51517ae74f4b.png" align=right
+                   hspace=6 vspace=6 alt="Description: awslogo" title="Description: awslogo" v:shapes="Picture_x0020_1">
+                   </img>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <p style="margin-bottom: 6px; margin-top: 0px; border-top: 7px solid #FFC000; text-align:center; font-size:1px; " >&nbsp;</p>
+
+               </td>
+           </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+               <td>
+                   AWS Free Tier usage limit alerting via AWS Budgets
+               </td>
+               <td align="right">
+                   02/24/2021
+               </td>
+           </tr>
+         </table>
+         <br>
+         <br>
+         <table>
+           <tr>
+               <td>Dear AWS Customer, </td>
+           </tr>
+        </table>
+        <br>
+        <table>
+           <tr>
+               <td>
+                Your AWS account 881179186002 has exceeded 85% of the usage limit for one or more AWS Free Tier-eligible services for the month of February.
+               </td>
+           </tr>
+       </table> 
+       <br>
+       <table style="border-collapse: collapse; max-width: 800px;">
+         <tr align="left" bgcolor="#CCCCCC">
+             <td class="tableCell">
+                 <font color="#000000">Product</font>
+             </td>
+             <td class="tableCell">
+                 <font color="#000000">AWS Free Tier Usage as of 02/24/2021</font>
+             </td>
+             <td class="tableCell">
+                 <font color="#000000">Usage Limit</font>
+             </td>
+             <td class="tableCell">
+                 <font color="#000000">AWS Free Tier Usage Limit</font>
+             </td>
+         </tr>
+         
+         <tr>
+             <td class="tableCell">
+                 AWSLambda
+             </td>
+             <td class="tableCell">
+                 400000.0 seconds
+             </td>
+             <td class="tableCell">
+                 400000.0 seconds
+             </td>
+             <td class="tableCell">
+                 400,000 seconds of compute time per month for AWS Lambda
+             </td>
+         </tr>
+         
+         <tr>
+             <td class="tableCell">
+                 AWSLambda
+             </td>
+             <td class="tableCell">
+                 1000000.0 Requests
+             </td>
+             <td class="tableCell">
+                 1000000.0 Requests
+             </td>
+             <td class="tableCell">
+                 1,000,000 free requests per month for AWS Lambda
+             </td>
+         </tr>
+         
+         <tr>
+             <td class="tableCell">
+                 AmazonS3
+             </td>
+             <td class="tableCell">
+                 2000.0 Requests
+             </td>
+             <td class="tableCell">
+                 2000.0 Requests
+             </td>
+             <td class="tableCell">
+                 2,000 Put, Copy, Post or List Requests of Amazon S3
+             </td>
+         </tr>
+         
+     </table>
+       <br>
+       <table>
+           <tr>
+               <td>
+               To learn more about your AWS Free Tier usage, please access the <a href="https://www.amazon.com/gp/f.html?C=1MBFAF2CMECWR&M=urn:rtn:msg:202102242041384a407d792e6048319585ac6d3da0p0na&R=2LO33A3NREI41&T=C&U=https%3A%2F%2Fconsole.aws.amazon.com%2Fbilling%2Fhome%3Fref_%3Dpe_32559890_475255360%23%2Fbills%3F&H=FX1UFFIZFVIERWLDPMZR51ZAAAIA&ref_=pe_32559890_475255360">AWS Billing & Cost Management Dashboard</a>. You can find more information on AWS Free Tier <a href="https://www.amazon.com/gp/f.html?C=1MBFAF2CMECWR&M=urn:rtn:msg:202102242041384a407d792e6048319585ac6d3da0p0na&R=1O21SVZRX5QYA&T=C&U=https%3A%2F%2Faws.amazon.com%2Ffree%2F%3Fref_%3Dpe_32559890_475255360&H=OYNZIXEMEX7WOF3ZPWTBTG7UVAGA&ref_=pe_32559890_475255360">here</a>.
+               </td>
+           </tr>
+       </table> 
+       <br>
+        <table>
+           <tr>
+               <td>
+                <em>This alert is provided by <a href="https://www.amazon.com/gp/f.html?C=1MBFAF2CMECWR&M=urn:rtn:msg:202102242041384a407d792e6048319585ac6d3da0p0na&R=3JXNMM0I5ZV56&T=C&U=https%3A%2F%2Fconsole.aws.amazon.com%2Fbilling%2Fhome%3F%2F%26ref_%3Dpe_32559890_475255360%23%2Fbudgets&H=KUDJ4M6PZKVO1DYG1CGP0ZDOP28A&ref_=pe_32559890_475255360">AWS Budgets</a>. AWS automatically tracks your service usage and will alert you if you have reached 85% of the usage limit for one or more AWS Free Tier-eligible services. To unsubscribe from these alerts or to change the email address to which you would like your alerts to be sent, please visit the <a href="https://www.amazon.com/gp/f.html?C=1MBFAF2CMECWR&M=urn:rtn:msg:202102242041384a407d792e6048319585ac6d3da0p0na&R=6O975VF26BRM&T=C&U=https%3A%2F%2Fconsole.aws.amazon.com%2Fbilling%2Fhome%3Fref_%3Dpe_32559890_475255360%23%2Fpreference&H=UCAOZD3UTFGIA0HABJCC8AQTMD8A&ref_=pe_32559890_475255360">Cost Management Preferences</a>.</em>
+               </td>
+           </tr>
+       </table> 
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <p class="footer">
+           Please do not reply directly to this email. If you have any questions or comments regarding this email, please contact us at <a href="https://www.amazon.com/gp/f.html?C=1MBFAF2CMECWR&M=urn:rtn:msg:202102242041384a407d792e6048319585ac6d3da0p0na&R=3148T7VKYIXH8&T=C&U=https%3A%2F%2Faws.amazon.com%2Fsupport%3Fref_%3Dpe_32559890_475255360&H=58OAT2JDRU6IL9HSGR8BIASDDA8A&ref_=pe_32559890_475255360">https://aws.amazon.com/support</a>
+  </p>
+  <p class="footer">
+  
+    This message was produced and distributed by Amazon Web Services, Inc., 410 Terry Avenue North, Seattle, Washington 98109-5210. AWS will not be bound by, and specifically objects to, any term, condition or other provision which is different from or in addition to the provisions of the AWS Customer Agreement or AWS Enterprise Agreement between AWS and you (whether or not it would materially alter such AWS Customer Agreement or AWS Enterprise Agreement) and which is submitted in any order, receipt, acceptance, confirmation, correspondence or otherwise, unless AWS specifically agrees to such provision in a written instrument signed by AWS.
+  
+  </p>
+    <img width="1" height="1" src="https://www.amazon.com/gp/r.html?C=1MBFAF2CMECWR&M=urn:rtn:msg:202102242041384a407d792e6048319585ac6d3da0p0na&R=2QYPJCLGXFYZA&T=E&U=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&H=YATDGHPFMTHOWTJS7LOJEGT9TYGA&ref_=pe_32559890_475255360_open" /></body>
+</html>
+------=_Part_1026669_483662817.1614199298982--
