@@ -31,10 +31,11 @@ Dear AWS Customer,
 
 Your AWS account 881179186002 has exceeded 85% of the usage limit for one or more AWS Free Tier-eligible services for the month of February.
 
-Product 	AWS Free Tier Usage as of 02/24/2021 	Usage Limit 	AWS Free Tier Usage Limit
-AWSLambda 	400000.0 seconds 	400000.0 seconds 	400,000 seconds of compute time per month for AWS Lambda
-AWSLambda 	1000000.0 Requests 	1000000.0 Requests 	1,000,000 free requests per month for AWS Lambda
-AmazonS3 	2000.0 Requests 	2000.0 Requests 	2,000 Put, Copy, Post or List Requests of Amazon S3
+|Product 	|AWS Free Tier Usage as of 02/24/2021 | Usage Limit      |AWS Free Tier Usage Limit                                |
+|---------|-------------------------------------|------------------|---------------------------------------------------------|
+|AWSLambda|400000.0 seconds 	                  |400000.0 seconds  |400,000 seconds of compute time per month for AWS Lambda |
+|AWSLambda|1000000.0 Requests 	                |1000000.0 Requests|1,000,000 free requests per month for AWS Lambda         |
+|AmazonS3 |2000.0 Requests 	                    |2000.0 Requests 	 |2,000 Put, Copy, Post or List Requests of Amazon S3      |
 
 To learn more about your AWS Free Tier usage, please access the AWS Billing & Cost Management Dashboard. You can find more information on AWS Free Tier here.
 
