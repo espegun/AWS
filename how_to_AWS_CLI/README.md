@@ -12,5 +12,8 @@ The [command structure](https://docs.aws.amazon.com/cli/latest/userguide/cli-usa
 `$ aws s3 cp file.zip s3://bucket_name/folder/..../file.zip` Upload to S3.  
 `$ aws s3 cp s3://bucket_name/.../file.zip .` Download from S3.  
 
+Fredrik eksempel
+`aws s3 cp --recursive s3://ok-origo-dataplatform-dev/processed/green/badetemperatur/version=1/year=2020/month=7/ juli/`
+
 ## Links
 https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
