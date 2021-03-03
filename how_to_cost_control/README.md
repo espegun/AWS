@@ -16,6 +16,11 @@ Quoted:
 
 https://aws.amazon.com/support
 
+
+
+WIP Creating alarms for anomaly detection, Cloudwatch.
+
+
 ## Useful commands
 `...`  ....  
 
