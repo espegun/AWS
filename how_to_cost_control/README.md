@@ -18,7 +18,8 @@ https://aws.amazon.com/support
 
 
 
-WIP Creating alarms for anomaly detection, Cloudwatch.
+WIP Creating alarms for anomaly detection, **Cloudwatch**.
+Set alarms for usage of buckets and invocations of lambdas over a certain period.
 
 
 ## Useful commands
