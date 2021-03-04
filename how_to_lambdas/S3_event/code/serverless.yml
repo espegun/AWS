@@ -1,0 +1,29 @@
+# https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml/
+
+# S3 events
+# https://docs:aws:amazon:com/AmazonS3/latest/userguide/NotificationHowTo:html#notification-how-to-event-types-and-destinations
+
+frameworkVersion: ">=2.0.0"
+
+service: test-lambda-to-S3
+
+# Some of the arguments under provider can also be given when deploying,
+# e.g. sls deploy --stage prod --region eu-west-1
+provider:
+  name: aws
+#  iam: Hvorfor virker ikke dette?
+#    role: arn:aws:iam::881179186002:role/lambda-s3-role
+  stage: dev
+  region: eu-west-1
+  runtime: python3.8
+
+# A CloudFormation stack is created from {serivce-name}-{stage}.
+
+functions:
+  get_key:  # The full function name in the AWS console will be {service_name}-{stage}-{function_name}
+    handler: handler.react_to_file_event  # Reference to a function in a Python (handler) file
+    events:
+      - s3:  # Note: Need 4 space indent here, not the normal 2
+          bucket: upload-data-here
+          event: s3:ObjectCreated:*
+          existing: true  # The bucket already exists
