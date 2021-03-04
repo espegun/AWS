@@ -14,4 +14,4 @@
 [Example](...)
 
 ## Useful links
-[Description](https://www.cisco.com)  
+[Design patterns DynamoDB](https://www.youtube.com/watch?v=HaEPXoXVf2k) Se denne, visstnok veldig bra.  
