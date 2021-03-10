@@ -1,5 +1,7 @@
 # How to Cost Management, Billing and alarms
 
+Note - your Free Tier expires March 31st, 2021. After this, monitor closely!
+
 ## The purpose
 Monitor, raise alarms and avoid spending more than expected, especially as a result of unintended resource utilization.
 
