@@ -1,28 +1,28 @@
 
-# How to Lambda (and Serverless?)
+# How to Lambda
 Note - this README is about Lambdas in general. If you want to see how Lambda functions is handled for Origo Dataplatform, check the separate [repo](https://github.com/espegun/ok_dataplattform/tree/master/how_to_lambda_boilerplate) describing this.
 
 ## The purpose
 AWS Lambda is useful to glue together many different AWS components. The functions automatically scale up to handle actual demand.
 
 ## How does it work?
-Lambdas typically process events from some event source like S3, DynamoDB or an application. 
-There are plenty of lambda blueprints (like `hello-world-python`)
-You need to create an execution role which can be used to trigger the Lambda function.
+Lambdas typically process events from some event source like S3, DynamoDB or an application.  
+There are plenty of lambda blueprints (like `hello-world-python`). 
+You need to create an execution role which can be used to trigger the Lambda function.  
 You need to specify a handler function or method which will receive the `event` data as an input and will then start to process the event.
-You may create a test event (JSON) to test the Lambda function.
-You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html)
+You may create a test event (JSON) to test the Lambda function.  
+You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html).  
 
-*Lambda functions* are possibly assigned to *Lambda applications* and *Step Functions* (see under console).
+*Lambda functions* are possibly assigned to *Lambda applications* and *Step Functions* (see under console).  
 
 https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
 
+## Creating an execution role
+*The purpose is....*
 
-### Getting started with lambdas
-https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
-
-### Lambda example: [Hello world using the console](https://docs.aws.amazon.com/lambda/latest/dg/getting-started-create-function.html)
-Manually create a lambda handler function in Python using the console. The `event` is the actual function input, while `context` gives descriptions about the environment. Create a test case, this is normally done by specifying a dict-like object which is passed as the `event`. In the end return a dict-like object, preferably with a `statusCode` and a `body`. In some cases (when?), the value of `body` element should be converted to JSON, using `json.dumps(body)`.
+## Creating an handler function
+The handler function can be written directly in the console or deployed in a number of ways which will be discussed further down. This section discusses only the structure of the handler function and surrounding code.  
+The `event` is the actual function input, while `context` gives descriptions about the environment. Create a test case, this is normally done by specifying a dict-like object which is passed as the `event`. In the end return a dict-like object, preferably with a `statusCode` and a `body`. In some cases (when?), the value of `body` element should be converted to JSON, using `json.dumps(body)`.
 ```
 import json
 
@@ -49,10 +49,30 @@ The test event is
 }
 ```
 
-### Deploy from zip archive
+
+
+
+
+
+
+
+
+## Deployment
+There are a number of ways to write and deploy a lambda function to AWS.
+
+### Deploy: From the console
+[console](https://docs.aws.amazon.com/lambda/latest/dg/getting-started-create-function.html)
+
+### Deploy: Using the Serverless framework
+This is the method used in several of the examples further up.
+**TBD**
+
+### Deploy: From a zip archive
+**TBD**
 https://docs.aws.amazon.com/lambda/latest/dg/python-package.html
 
 ### Deploy from container image
+**TBD**
 https://docs.aws.amazon.com/lambda/latest/dg/python-image.html
 
 
@@ -121,6 +141,11 @@ Setting up a pipeline can be done with TerraForm - (and/or AWS Step Functions).
 
 ## Debugging
 After having deployed a lambda function, you may check failure messages in StepFunctions and press failed step (if a step function sequence is established) or CloudWatch (or within Origo, use the link in `#dataplattform-alerts` after crashes).
+
+
+### Getting started with lambdas
+https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
+
 
 
 ## Useful commands
