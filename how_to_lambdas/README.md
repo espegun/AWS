@@ -20,6 +20,9 @@ https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
 ## Creating an execution role
 *The purpose is....*
 
+### And maybe some alternative ways of doing it...
+...
+
 ## Creating an handler function
 The handler function can be written directly in the console or deployed in a number of ways which will be discussed further down. This section discusses only the structure of the handler function and surrounding code.  
 The `event` is the actual function input, while `context` gives descriptions about the environment. Create a test case, this is normally done by specifying a dict-like object which is passed as the `event`. In the end return a dict-like object, preferably with a `statusCode` and a `body`. In some cases (when?), the value of `body` element should be converted to JSON, using `json.dumps(body)`.
