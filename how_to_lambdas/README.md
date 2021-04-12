@@ -17,11 +17,69 @@ You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonClou
 
 https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
 
-## Creating an execution role
-*The purpose is....*
+## Giving an execution role
+See [IAM in general](https://www.vg.no).  
+The lambda function must be given a suitable *execution role*, which allows it to access the necessary resources.
+* We need to define a *user* with programmatic access.
+* A *role* has to be associated with t
+
+
+
+
+
+
+
+The lambda must be given a suitable EXECUTION ROLE. 
+https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html
+Also created `lambda-s3-role` with the above `AWSLambdaS3Policy` attached.
+
+
+
+
+
+Also see this example, where the lambda is given a role which has a policy which
+also has the permissions required for the lambda to read and write to certain S3 buckets.
+
+
+
 
 ### And maybe some alternative ways of doing it...
 ...
+
+Defined a policy `AWSLambdaS3Policy`:
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:PutLogEvents",
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::upload-data-here/*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::write-logs-here/*"
+        }
+    ]
+}
+```
+
+
+
 
 ## Creating an handler function
 The handler function can be written directly in the console or deployed in a number of ways which will be discussed further down. This section discusses only the structure of the handler function and surrounding code.  
