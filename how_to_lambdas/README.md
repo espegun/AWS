@@ -18,7 +18,7 @@ You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonClou
 https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
 
 ## Giving an execution role
-See [IAM in general](https://www.vg.no).  
+See [IAM in general](https://github.com/espegun/AWS/tree/main/how_to_IAM).  
 A Lambda function needs to be assigned an *execution role* which enables it to use other AWS services as needed. As an example, we may create the role `lambda-s3-role` with the existing `AWSLambdaS3Policy` attached. Se example [here](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html).
 
 Some typical policies which : 
