@@ -19,31 +19,29 @@ https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
 
 ## Giving an execution role
 See [IAM in general](https://www.vg.no).  
+A Lambda function needs to be assigned an *execution role* which enables it to use other AWS services as needed. As an example, we may create the role `lambda-s3-role` with the existing `AWSLambdaS3Policy` attached. Se example [here](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html).
+
+Some typical policies which : 
+`AWSLambdaBasicExecutionRole` - Existing Role which .....
+
+Before creating the lambda function; go to IAM, create a role, add one or more *(permission) policies* like `AWSLambdaBasicExecutionRole`  and give the role a name, e.g. `lambda-role`.
+
+
 The lambda function must be given a suitable *execution role*, which allows it to access the necessary resources.
 * We need to define a *user* with programmatic access.
 * A *role* has to be associated with t
 
 
 
-
-
-
-
-The lambda must be given a suitable EXECUTION ROLE. 
-https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html
-Also created `lambda-s3-role` with the above `AWSLambdaS3Policy` attached.
-
-
-
-
-
 Also see this example, where the lambda is given a role which has a policy which
 also has the permissions required for the lambda to read and write to certain S3 buckets.
 
+### Execution role: In the console
 
 
 
-### And maybe some alternative ways of doing it...
+
+### Execution role: Define in `serverless.yml`
 ...
 
 Defined a policy `AWSLambdaS3Policy`:
