@@ -39,7 +39,9 @@ also has the permissions required for the lambda to read and write to certain S3
 
 ### Execution role: In the console
 Before creating the lambda function; go to IAM, create a role, add one or more *(permission) policies* like `AWSLambdaBasicExecutionRole`  and give the role a name, e.g. `lambda-role`.
-
+* Default role (upload logs to CloudWatch)
+* Use a custom role created in IAM
+* Use an AWS policy template.
 
 
 
