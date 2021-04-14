@@ -32,12 +32,11 @@ Some typical policies used:
 Also see this about [Lambda permissions](https://docs.aws.amazon.com/lambda/latest/dg/lambda-permissions.html).  
 
 ### Execution role: In the console
-Before creating the lambda function; go to IAM, create a role, add one or more *(permission) policies* like `AWSLambdaBasicExecutionRole`  and give the role a name, e.g. `lambda-role`.
-* Default role (upload logs to CloudWatch)
-* Use a custom role created in IAM
-* Use an AWS policy template.
-
-
+A lambda function may be given any such role.
+* Default role (upload logs to CloudWatch).  
+* Use a custom role created in IAM.  
+* Use an AWS policy template.  
+To check this for a lambda function, go to the **Lambda function**, go to **Configuration** and then choose **Permissions**.
 
 ### Execution role: Define in `serverless.yml`
 ...
