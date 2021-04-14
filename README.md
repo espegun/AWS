@@ -11,13 +11,6 @@ Remember that you have the moderately clever scripts to switch between accounts.
 https://aws.amazon.com/training/ramp-up-guides/
 
 
-
-
-
-## AWS Ramp up guides - by roles and topics
-https://aws.amazon.com/training/ramp-up-guides/
-
-
 ## General
 [ARNs](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) (Amazon Resource names) are resource identiers which are unique across all of  AWS, e.g. for users or policies. An example is `arn:aws:iam::881179186002:user/test_user` (the twelve digits are the account id).  
 
