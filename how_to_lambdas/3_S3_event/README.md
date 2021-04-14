@@ -4,6 +4,7 @@
 ## Test  
 `aws s3 cp uploaded_file.txt s3://upload-data-here/`
 
+## Explanation
 The lambda must be given a suitable EXECUTION ROLE, as shown [here](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html).  
 `serverless.yml` gave the lambda function the custom defined `lambda-s3-role`.
 The custom *role* `lambda-s3-role` was created in the console with the below `AWSLambdaS3Policy` attached.
