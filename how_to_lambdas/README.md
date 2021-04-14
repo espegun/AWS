@@ -25,11 +25,11 @@ A Lambda function needs to be assigned an *execution role* which enables it to u
 *Unclear: Do we need to define a user with programmatic access? (for the execution role)*
 
 Some typical roles used:
-* ...
+* ...  
 Some typical policies used:
 * `AWSLambdaBasicExecutionRole` - Existing *policy* which has the *permissions* that the function needs to write logs to CloudWatch Logs.  
 
-[Lambda permissions](https://docs.aws.amazon.com/lambda/latest/dg/lambda-permissions.html).  
+Also see this about [Lambda permissions](https://docs.aws.amazon.com/lambda/latest/dg/lambda-permissions.html).  
 
 ### Execution role: In the console
 Before creating the lambda function; go to IAM, create a role, add one or more *(permission) policies* like `AWSLambdaBasicExecutionRole`  and give the role a name, e.g. `lambda-role`.
