@@ -34,7 +34,7 @@ Also see this about [Lambda permissions](https://docs.aws.amazon.com/lambda/late
 ### Execution role: In the console
 A lambda function may be given any such role.
 * Default role (upload logs to CloudWatch).  
-* Use a custom role created in IAM.  
+* Use a custom role created in IAM, as shown [here](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html#permissions-executionrole-console).  
 * Use an AWS policy template.  
 To check this for a lambda function, go to the **Lambda function**, go to **Configuration** and then choose **Permissions**.
 
