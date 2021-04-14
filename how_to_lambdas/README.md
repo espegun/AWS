@@ -18,24 +18,18 @@ You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonClou
 https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
 
 ## Giving an execution role
-See my own notes about [IAM in general](https://github.com/espegun/AWS/tree/main/how_to_IAM).  
+A Lambda function needs to be assigned an *execution role* which enables it to use other AWS services as needed. The *role* need to have the necessary *policies* with the required *permissions*. The roles can be premade template or default role, or defined as the lambda is initiated.
+[Example 1](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html). The lambda is given a *role* which has a *policy* which also has the *permissions* required for the lambda to read and write to certain S3 buckets.  
+[Example 2]((https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html) Creating a custom role  `lambda-s3-role` with the existing `AWSLambdaS3Policy` attached.  
+
+*Unclear: Do we need to define a user with programmatic access? (for the execution role)*
+
+Some typical roles used:
+* ...
+Some typical policies used:
+* `AWSLambdaBasicExecutionRole` - Existing *policy* which has the *permissions* that the function needs to write logs to CloudWatch Logs.  
+
 [Lambda permissions](https://docs.aws.amazon.com/lambda/latest/dg/lambda-permissions.html).  
-
-A Lambda function needs to be assigned an *execution role* which enables it to use other AWS services as needed. As an example, we may create the role `lambda-s3-role` with the existing `AWSLambdaS3Policy` attached. Se example [here](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html).
-
-Some typical policies which : 
-`AWSLambdaBasicExecutionRole` - Existing Role which .....
-
-
-
-The lambda function must be given a suitable *execution role*, which allows it to access the necessary resources.
-* We need to define a *user* with programmatic access.
-* A *role* has to be associated with t
-
-
-
-Also see this example, where the lambda is given a role which has a policy which
-also has the permissions required for the lambda to read and write to certain S3 buckets.
 
 ### Execution role: In the console
 Before creating the lambda function; go to IAM, create a role, add one or more *(permission) policies* like `AWSLambdaBasicExecutionRole`  and give the role a name, e.g. `lambda-role`.
