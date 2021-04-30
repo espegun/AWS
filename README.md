@@ -23,3 +23,6 @@ Ikke AWS spesifikk, men les [Fundamentals of data architecture for data scientis
 * Look at the log from the failing process in **Step Functions** in the console.
 * Remember that data may be available **DynamoDB**.
 * 
+
+## TBD!
+* PostgresDB in AWS
