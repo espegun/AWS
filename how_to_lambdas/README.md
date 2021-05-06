@@ -22,8 +22,6 @@ A Lambda function needs to be assigned an *execution role* which enables it to u
 * [Example 1](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html). The lambda is given a *role* which has a *policy* which also has the *permissions* required for the lambda to read and write to certain S3 buckets.  
 * [Example 2](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html) Creating a custom role  `lambda-s3-role` with the existing `AWSLambdaS3Policy` attached.  
 
-*Unclear: Do we need to define a user with programmatic access? (for the execution role)*
-
 Some managed roles typical roles used: NOT FOUND YET.   
 Some managed policies typically used with Lambdas, see [this](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html#permissions-executionrole-features).  
 
