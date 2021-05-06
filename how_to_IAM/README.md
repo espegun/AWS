@@ -2,7 +2,7 @@
 
 ## The purpose
 *Authentication* identifies who you are, typically by using login credentials and MFA.
-*Authorization* handles the policies assigned to an idenity. 
+*Authorization* handles the policies assigned to an idenity.  
 
 ## How does it work?
 - [Accounts](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html): An account has a 12-digit ID and is also associated with a mail-adress and *root* user.
