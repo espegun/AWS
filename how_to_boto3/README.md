@@ -16,8 +16,8 @@ Connect to AWS-service using Python.
 `resource` is more high-level than `client`, use the former if possible.
 
 
-## Setup
-In the AWS console, go to IAM and create a user with *Programmatic access*, use the *AdministratorAccess* existing policy for full development, use *least privilige* rights for normal service users. You now have the `Access key ID`(user id) and the `Secret access key`(password).  
+## Setup (outside the AWS-environment)
+In the AWS console, go to IAM and create a user with *Programmatic access*, use the *AdministratorAccess* existing policy for full development, use *least privilige* rights for normal service users. You now have the `Access key ID`(user id) and the `Secret access key`(password) associated with one specific role with certain priviliges.  
 Install boto3 according to the instructions at the [repo](https://github.com/boto/boto3).  
 Setup credentials for the user with programmatic access in `~/.aws/credentials` og `~/.aws/config` as described [here](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#configuration), i.e. by using `aws configure` or manually modifying the files.
 The files may contain several entries for different profile names, which is given in the brackets, like `[my_profile_name]`. The environment variable `AWS_PROFILE` is read, trying to find a matching name and if not match, uses the `[default]` specification.
