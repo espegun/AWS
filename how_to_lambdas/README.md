@@ -18,7 +18,7 @@ You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonClou
 https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
 
 ## Giving an execution role
-A Lambda function needs to be assigned an *execution role* which enables it to use other AWS services as needed. The *role* need to have the necessary *policies* with the required *permissions*. The roles can be premade templates or custom roles, or defined programmatically when the lambda is initiated. Note that the execution is *for the lambda* to use other resources, which other permissions have to be set for other resources to access the lambda, as seen [here](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html).
+A Lambda function needs to be assigned an *execution role* which enables it to use other AWS services as needed. The *role* need to have the necessary *policies* with the required *permissions*. The roles can be premade templates or custom roles, or defined programmatically when the lambda is initiated. Note that the execution is *for the lambda* to use other resources. Other permissions have to be set for other resources to *trigger* the lambda, e.g. when uploading a file to S3, as seen in Example 1 and explained [here](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html).
 * [Example 1](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html). The lambda is given a *role* which has a *policy* which also has the *permissions* required for the lambda to read and write to certain S3 buckets.  
 * [Example 2](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html) Creating a custom role  `lambda-s3-role` with the existing `AWSLambdaS3Policy` attached.  
 
