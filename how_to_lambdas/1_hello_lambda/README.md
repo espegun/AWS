@@ -2,7 +2,7 @@
 See the content of `serverless.yml` to understand how the function is defined and how it refers to the handler function in `handler.py`.
 
 ## Deploy to AWS
-To be deploy a function to an AWS account, you need to be set up with valid data in `~/.aws/credentials` and `~/.aws/config`, in addition to matching `AWS_PROFILE` environment variable (could be `default`).  
+To deploy a lambda function to an AWS account, you need to be set up with valid data in `~/.aws/credentials` and `~/.aws/config`, in addition to matching `AWS_PROFILE` environment variable (could be `default`).  
 `$ sls deploy` Must be run in the same directory as `serverless.yml`.  
 
 ## Test
