@@ -1,7 +1,7 @@
 # How to Identitiy and Access Management (IAM)
 
 ## The purpose
-*Authentication* identifies who you are, typically by using login credentials.
+*Authentication* identifies who you are, typically by using login credentials and MFA.
 *Authorization* handles the policies assigned to an idenity. 
 
 ## How does it work?
