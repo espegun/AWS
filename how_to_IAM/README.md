@@ -16,6 +16,7 @@ Some examples:
 - A lambda function needs to be given a *role* which has the `AWSLambdaBasicExecutionRole` *policy* which has the *permissions* that the function needs to write logs to CloudWatch Logs.  Also see [this example](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html), where the lambda is given a *role* which has a *policy* which also has the *permissions* required for the lambda to read and write to certain S3 buckets.
 - ...
 
+To login using programmatic access, see the instructions in [how_to_boto3](../how_to_boto3/README.md)
 
 ## Useful commands
 `...`  ....  
