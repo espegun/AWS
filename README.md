@@ -1,11 +1,12 @@
 # AWS
-[Private AWS login](https://espenpersonal.signin.aws.amazon.com/console), account 881179186002, root login = espen.gunnarsen@gmail.com. TFA.  
+[Private AWS login](https://espenpersonal.signin.aws.amazon.com/console), account 881179186002 / EspenPersonal, root login = espen.gunnarsen@gmail.com. TFA.  
 [Origo AWS login](https://login.oslo.kommune.no/auth/realms/AD/protocol/saml/clients/amazon-aws)  
 
 Remember that you have the moderately clever scripts to switch between accounts. These move `credentials` and `config` and updates  the `AWS_PROFILE` environment variable.   
 `$ source ~/aws_config/origo_aws.sh`  
 `$ source ~/aws_config/priv_aws.sh`  
 
+Normally, you can log in to the `EspenPersonal` account with the `espen_daily` user.
 
 ## AWS Ramp up guides - by roles and topics
 https://aws.amazon.com/training/ramp-up-guides/
