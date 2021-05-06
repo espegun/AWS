@@ -32,7 +32,7 @@ aws_secret_access_key = YOUR_SECRET_KEY
 [default]
 region=eu-west-1
 ```
-With these keys in place in the environment which is using `boto3`, no further login should be required.  
+With these keys in place in the environment which is connecting to AWS using `boto3`, no further login should be required.  
 [saml2aws](https://github.com/Versent/saml2aws) is useful when you have several accounts, several clients or need time limited login sessions.  
 
 ## Useful links
