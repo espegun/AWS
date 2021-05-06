@@ -9,8 +9,8 @@ AWS Lambda is useful to glue together many different AWS components. The functio
 Lambdas typically process events from some event source like S3, DynamoDB or an application.  
 There are plenty of lambda blueprints (like `hello-world-python`). 
 You need to create an execution role which can be used to trigger the Lambda function.  
-You need to specify a handler function or method which will receive the `event` data as an input and will then start to process the event.
-You may create a test event (JSON) to test the Lambda function.  
+You need to specify a handler function which will receive the `event` data as an input and will then start to process the event.
+You may create a test event (JSON) in the console to test the Lambda function.  
 You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html).  
 
 *Lambda functions* are possibly assigned to *Lambda applications* and *Step Functions* (see under console).  
