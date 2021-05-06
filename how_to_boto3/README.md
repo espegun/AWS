@@ -21,13 +21,13 @@ In the AWS console, go to IAM and create a user with *Programmatic access*, use 
 Install boto3 according to the instructions at the [repo](https://github.com/boto/boto3).  
 Setup credentials for the user with programmatic access in `~/.aws/credentials` og `~/.aws/config` as described [here](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#configuration), i.e. by using `aws configure` or manually modifying the files.
 
-`credentiasls`:
+~/.aws/credentiasls :
 ```
 [default]
 aws_access_key_id = YOUR_ACCESS_KEY
 aws_secret_access_key = YOUR_SECRET_KEY
 ```
-`config`:
+~/.aws/config:
 ```
 [default]
 region=eu-west-1
