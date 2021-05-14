@@ -1,6 +1,8 @@
 # How to Identitiy and Access Management (IAM)
 
 ## The purpose
+Any entity which should use any AWS resource, needs to have a authenticated *user* with assigned *permissions*.
+
 *Authentication* identifies who you are, typically by using login credentials and MFA.
 *Authorization* handles the policies assigned to an idenity.  
 
