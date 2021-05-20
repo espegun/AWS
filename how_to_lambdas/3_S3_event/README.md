@@ -2,7 +2,8 @@
 ## Deploy  
 `sls deploy` (must be run from the serverless directory, i.e. where `serverless.yml` is)   
 ## Test  
-`aws s3 cp uploaded_file.txt s3://upload-data-here/`
+`aws s3 cp uploaded_file.txt s3://upload-data-here/`  
+`aws s3 cp s3://write-logs-here/dump.txt .`  
 
 ## Explanation
 The lambda must be given a suitable *execution role*, as shown [here](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html).  
