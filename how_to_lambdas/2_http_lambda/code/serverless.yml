@@ -13,6 +13,8 @@ provider:
   stage: dev
   region: eu-west-1
   runtime: python3.8
+  lambdaHashingVersion: 20201221
+
 
 functions:
   hello_get:  # The full function name in the AWS console will be {service_name}-{stage}-{function_name} 
