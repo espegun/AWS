@@ -13,6 +13,8 @@ Now use the AWS console that it or has been updated or simply invoke the functio
 
 https://www.serverless.com/framework/docs/providers/aws/examples/hello-world/python/
 
+## Notes and traps
+If you delete the lambda manually in the console, it will *not* reploy when running this again, because the function have made traces in S3 and CloudFormation. To fix it, comment out the function in `serverless.yml`, deploy it, the remove the commnets and then deployment should work again.
 
 
 
