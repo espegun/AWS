@@ -5,7 +5,7 @@
 
 ## How does it work?
 [How it works](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.html)  
-
+[Valid DynamoDB types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/dynamodb.html#ref-valid-dynamodb-types)  
 ...
 
 ## Useful commands
