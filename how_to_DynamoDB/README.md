@@ -7,6 +7,8 @@
 [How it works](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.html)  
 [Valid DynamoDB types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/dynamodb.html#ref-valid-dynamodb-types)  
 ...
+**TBD: KeySchema**
+
 
 ## Useful commands
 `...`  ....  
@@ -15,6 +17,7 @@
 ## boto3
 [DynamoDB Python examples](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html)
 
+**TBD: Add here - or - refer to code examples.**
 
 
 
