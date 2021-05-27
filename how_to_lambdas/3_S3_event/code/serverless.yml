@@ -17,10 +17,11 @@ provider:
     # or define it here with managed policies
     # role:
     #   name: 
-    
   stage: dev
   region: eu-west-1
   runtime: python3.8
+  lambdaHashingVersion: 20201221
+
 
 # A CloudFormation stack is created from {serivce-name}-{stage}.
 

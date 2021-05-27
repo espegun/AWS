@@ -1,8 +1,10 @@
 ## serverless.yml
 See the content of `serverless.yml` to understand how the function is defined and how it refers to the handler function in `handler.py`.
+The lambda function does not need a role, since it does not use other AWS resources.
 
 ## Deploy to AWS
-To be deploy a function to an AWS account, you need to be set up with valid data in `~/.aws/credentials` and `~/.aws/config`, in addition to matching `AWS_PROFILE` environment variable (could be `default`).  
+To deploy a lambda function to an AWS account, you need to do this with a user which have the sufficient permissions and programmatic access (valid `aws_access_key_id` and `aws_secret_access_key` specified in `~/.aws/credentials` and `~/.aws/config`), in addition to matching `AWS_PROFILE` environment variable (could be `default`).  
+
 `$ sls deploy` Must be run in the same directory as `serverless.yml`.  
 
 ## Test
@@ -11,6 +13,8 @@ Now use the AWS console that it or has been updated or simply invoke the functio
 
 https://www.serverless.com/framework/docs/providers/aws/examples/hello-world/python/
 
+## Notes and traps
+If you delete the lambda manually in the console, it will *not* reploy when running this again, because the function have made traces in S3 and CloudFormation. To fix it, comment out the function in `serverless.yml`, deploy it, the remove the commnets and then deployment should work again.
 
 
 

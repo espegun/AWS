@@ -22,9 +22,15 @@ Launch an instance and add the key pair and security group (may be modified) alr
 `scp -i /folder/EC2_test_instance.pem ec2-user@54.216.85.67:~/source_dir/* .` How to download something from the instance.<br/>
 
 ### Setup various stuff on the instance
-To update Python, install Jupyter, see Weber p11-12.<br/>
-`jupyter notebook --ip <private IPv4>`   Set the instance running, it will return a token. Replace the private with public IP and paste in the browser (port 8888 must be open for inbound traffic).<br/>
-To set up a Flask API, simply run the `flaski_api.py`file (port 5000 must be open for inbound traffic).<br/>
+Check available Python versions in `/usr/bin` or by `python3 --version`.  
+Check pip version `pip --version`.
+`curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py`  
+`sudo python3 get-pip.py`
+
+To install packages (like selenium), use `pip install selenium --user`.  
+To update Python, install Jupyter, see Weber p11-12.  
+`jupyter notebook --ip <private IPv4>`   Set the instance running, it will return a token. Replace the private with public IP and paste in the browser (port 8888 must be open for inbound traffic).  
+To set up a Flask API, simply run the `flaski_api.py`file (port 5000 must be open for inbound traffic).  
 
 ## Boto3
 [Boto3 EC2 docs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html)  

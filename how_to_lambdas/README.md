@@ -9,8 +9,8 @@ AWS Lambda is useful to glue together many different AWS components. The functio
 Lambdas typically process events from some event source like S3, DynamoDB or an application.  
 There are plenty of lambda blueprints (like `hello-world-python`). 
 You need to create an execution role which can be used to trigger the Lambda function.  
-You need to specify a handler function or method which will receive the `event` data as an input and will then start to process the event.
-You may create a test event (JSON) to test the Lambda function.  
+You need to specify a handler function which will receive the `event` data as an input and will then start to process the event.
+You may create a test event (JSON) in the console to test the Lambda function.  
 You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html).  
 
 *Lambda functions* are possibly assigned to *Lambda applications* and *Step Functions* (see under console).  
@@ -18,11 +18,9 @@ You can monitor usage through [CloudWatch](http://docs.aws.amazon.com/AmazonClou
 https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
 
 ## Giving an execution role
-A Lambda function needs to be assigned an *execution role* which enables it to use other AWS services as needed. The *role* need to have the necessary *policies* with the required *permissions*. The roles can be premade templates or custom roles, or defined as the lambda is initiated. Note that the execution is *for the lambda* to use other resources, which other permissions have to be set for other resources to access the lambda.
+A Lambda function needs to be assigned an *execution role* which enables it to use other AWS services as needed. The *role* need to have the necessary *policies* with the required *permissions*. The roles can be premade templates or custom roles, or defined programmatically when the lambda is initiated. Note that the execution is *for the lambda* to use other resources. Other permissions have to be set for other resources to *trigger* the lambda, e.g. when uploading a file to S3, as seen in Example 1 and explained [here](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html).
 * [Example 1](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html). The lambda is given a *role* which has a *policy* which also has the *permissions* required for the lambda to read and write to certain S3 buckets.  
 * [Example 2](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html) Creating a custom role  `lambda-s3-role` with the existing `AWSLambdaS3Policy` attached.  
-
-*Unclear: Do we need to define a user with programmatic access? (for the execution role)*
 
 Some managed roles typical roles used: NOT FOUND YET.   
 Some managed policies typically used with Lambdas, see [this](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html#permissions-executionrole-features).  

@@ -2,12 +2,13 @@
 ## Deploy  
 `sls deploy` (must be run from the serverless directory, i.e. where `serverless.yml` is)   
 ## Test  
-`aws s3 cp uploaded_file.txt s3://upload-data-here/`
+`aws s3 cp upload_this.txt s3://upload-data-here/`  
+`aws s3 cp s3://write-logs-here/dump.txt .`  
 
 ## Explanation
-The lambda must be given a suitable EXECUTION ROLE, as shown [here](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html).  
+The lambda must be given a suitable *execution role*, as shown [here](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html).  
 `serverless.yml` gave the lambda function the custom defined `lambda-s3-role`.
-The custom *role* `lambda-s3-role` was created in the console with the below `AWSLambdaS3Policy` attached.
+The custom *role* `lambda-s3-role` (not *user*) was created in the console with the below `AWSLambdaS3Policy` attached.
 Defined a *policy* `AWSLambdaS3Policy` in the console:
 ```
 {
