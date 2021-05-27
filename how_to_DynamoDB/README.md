@@ -4,6 +4,8 @@
 ...
 
 ## How does it work?
+[How it works](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.html)  
+
 ...
 
 ## Useful commands
