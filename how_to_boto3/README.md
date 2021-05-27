@@ -1,5 +1,8 @@
 # How to boto3
 
+[Official and good boto3 examples for different services](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/examples.html)  
+
+
 ## 
 Note that this repo covers the stuff which is generic for boto3. For code which is specific to special technogies, check those repos.  
 [boto3 with EC2](https://github.com/espegun/AWS/blob/main/how_to_EC2/README.md#boto3)  
