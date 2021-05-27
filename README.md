@@ -27,3 +27,4 @@ Ikke AWS spesifikk, men les [Fundamentals of data architecture for data scientis
 
 ## TBD!
 * PostgresDB in AWS
+* [SNS + SQS](https://medium.com/awesome-cloud/aws-difference-between-sqs-and-sns-61a397bf76c5#:~:text=SQS%20is%20mainly%20used%20to,application%20to%20several%20storage%20systems.) (including in lambda functions, Fredriks workshop)   
