@@ -9,7 +9,6 @@
 ...
 **TBD: KeySchema**
 
-
 Queries are much faster and should be used when you know the item keys, scan should be used otherwise. For more details, see [here](https://dynobase.dev/dynamodb-scan-vs-query/).
 
 ## boto3
