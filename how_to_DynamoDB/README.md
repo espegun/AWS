@@ -10,16 +10,9 @@
 **TBD: KeySchema**
 
 
-## Useful commands
-`...`  ....  
-`...`  ....  
-
 ## boto3
-[DynamoDB Python examples](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html)
-
-**TBD: Add here - or - refer to code examples.**
-
-
+See the attached example files for basic table initiatlization, adding, removing, modifying, delete and querying. It is all mostly taken for [these excellent examples](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html).  
+[Conditions for query and scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/dynamodb.html#ref-dynamodb-conditions)  
 
 
 ## Useful links
