@@ -10,7 +10,7 @@
 **TBD: KeySchema**
 
 
-Queries are preferred and should be used when you know the item keys, scan should be used otherwise. See [here](https://dynobase.dev/dynamodb-scan-vs-query/).
+Queries are much faster and should be used when you know the item keys, scan should be used otherwise. For more details, see [here](https://dynobase.dev/dynamodb-scan-vs-query/).
 
 ## boto3
 See the attached example files for basic table initiatlization, adding, removing, modifying, delete and querying. It is all mostly taken for [these excellent examples](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html).  
