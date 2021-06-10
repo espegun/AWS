@@ -1,5 +1,7 @@
 # How to DynamoDB
 
+[AWS developer guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) This is really the go-to resource, with basic how-to's for various languages, integration guidelines and best development practices.
+
 ## The purpose
 ...
 
@@ -30,6 +32,6 @@ See the attached example files for basic table initiatlization, adding, removing
 
 
 ## Useful links
-[AWS developer guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)  
+
 [AWS: What is DynamoDB?](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)  
 [Design patterns DynamoDB](https://www.youtube.com/watch?v=HaEPXoXVf2k) Se denne, visstnok veldig bra.  
