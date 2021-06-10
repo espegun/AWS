@@ -6,13 +6,14 @@
 ## How does it work?
 
 [How it works](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.html)  
-A *table* is a collection of *items*, which consists of a number of *attributes*.
-Each item has a *primary key* (one or more attributes), which distinguishes them from all other items. Except for the attributes in the primary key, the table is schemaless. Attributes are normally scalars, but can be nested lists or maps (i.e. dictionaries). Keys can not be nested, but must be a number, string, or binary.
-The primary keys consist of one *partition key* (hash function input, then distributed on the drive) and possibly one *sorting key* (sort by this in the partition group). *Secondary indexes* can be created from attributes to query the items using other keys.
-A table can be associated with *DynamoDB Streams*, which then can trigger a lambda function when a table is updated.
+* A *table* is a collection of *items*, which consists of a number of *attributes*.
+* Each item has a *primary key* (one or more attributes), which distinguishes them from all other items. Except for the attributes in the primary key, the table is schemaless. 
+* Attributes are normally scalars, but can also be *document types*. [Rules for naming and datatypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html) - the most normal are *number*, *string*, *boolean*, *binary*, *null*, *lists* and *maps* (dictionaries). Keys can not be document types / nested, but must be a number, string, or binary.
+* The primary keys consist of one *partition key* (hash function input, then distributed on the drive) and possibly one *sorting key* (sort by this in the partition group). 
+* *Secondary indexes* can be created from attributes to query the items using other keys.
+* A table can be associated with *DynamoDB Streams*, which then can trigger a lambda function when a table is updated.
 
-[Valid DynamoDB types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/dynamodb.html#ref-valid-dynamodb-types)  
-[Rules for naming and datatypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html) - the most normal are *number*, *string*, *boolean*, *binary*, *null*, *lists* and *maps* (dictionaries).
+
 
 DynamoDB is region specific. Two tables with similar names in different regions are not the same. It is however written to several locations in the region and propagation between these may take a second or so. Read operations can be *Eventually Consistent Reads* or *Strongly Consistent Reads*, which both have heir pros/cons.
 
