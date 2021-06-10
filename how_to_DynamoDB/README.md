@@ -3,6 +3,8 @@
 ## The purpose
 ...
 
+[Relational DBs vs NoSQL](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.WhyDynamoDB.html)  
+
 ## How does it work?
 
 [How it works](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.html)  
