@@ -30,5 +30,9 @@ Ikke AWS spesifikk, men les [Fundamentals of data architecture for data scientis
 * [SNS + SQS](https://medium.com/awesome-cloud/aws-difference-between-sqs-and-sns-61a397bf76c5#:~:text=SQS%20is%20mainly%20used%20to,application%20to%20several%20storage%20systems.) (including in lambda functions, Fredriks workshop)
 * [MySQL (generisk)](https://arstechnica.com/gadgets/2021/06/mysql-101-installation-care-and-feeding-on-ubuntu/)
 
+
+[Serverless ML on AWS](https://betterprogramming.pub/how-to-build-and-deploy-a-serverless-machine-learning-app-on-aws-1468cf7ef5cb)  
+
+
 ## Nyttige lenker
 * [AWS and Azure - Equivalent services](https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services)  
