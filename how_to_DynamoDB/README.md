@@ -25,7 +25,10 @@ DynamoDB is region specific. Two tables with similar names in different regions 
 Queries are much faster and should be used when you know the item keys, scan should be used otherwise. For more details, see [here](https://dynobase.dev/dynamodb-scan-vs-query/).
 
 ## boto3 (DynamoDB with Python)
-See the attached example files for basic table initiatlization, adding, removing, modifying, delete and querying. It is all mostly taken for the excellent examples of [DynamoDB with Python](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html).  
+See the attached example files for basic table initiatlization, adding, removing, modifying, delete and querying. It is all mostly taken for the excellent examples of [DynamoDB with Python](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html). 
+
+Official and practical example of setting up and deploying a [DynamoDB database with boto3](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.html).
+
 
 ## Useful links
 [AWS: What is DynamoDB?](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)  
