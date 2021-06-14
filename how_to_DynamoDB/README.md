@@ -1,6 +1,6 @@
 # How to DynamoDB
 
-[AWS developer guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) This is really the go-to resource, with basic how-to's for various languages, integration guidelines and best development practices. 
+[AWS developer guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) This is really the go-to resource for almost everything, with basic how-to's for various languages, CLI, console, integration guidelines and best development practices. 
 
 ## The purpose
 [Relational DBs vs NoSQL](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.WhyDynamoDB.html)  
