@@ -2,6 +2,7 @@
 
 import random
 
+import pandas as pd
 import boto3
 from boto3.dynamodb.conditions import Attr
 import botocore
@@ -85,8 +86,16 @@ def users_above_age(table, age):
         FilterExpression=Attr('age').gt(age)
     )
     items = response['Items']
-    for item in items:
-        print(item)
+    # for item in items:
+    #     print(item)
+
+
+def mean_age_all(table):
+
+    response = table.scan()
+    items = response['Items']
+    df = pd.DataFrame(items)
+    print(f"The mean age for all {df.shape[0]} users is {df['age'].mean():.1f}.")
 
 
 def delete_user(table, username):
@@ -120,10 +129,15 @@ if __name__ == "__main__":
     print("Filtered data")
     users_above_age(table, 50)
 
+    print("Average age for all for users.")
+    mean_age_all(table)
+
     # Delete the last user added
     delete_user(table, username)
 
-    print("Deleting table. Not sure it gets permanently removed from the console though....")
-    table.delete()
+    DELETE_TABLE = True
+    if DELETE_TABLE:
+        print("Deleting table. Not sure it gets permanently removed from the console though....")
+        table.delete()
 
     print("That was fun.")
