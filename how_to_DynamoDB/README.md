@@ -7,8 +7,9 @@ For info about DynamoDB with Python, see further down.
 [Relational DBs vs NoSQL](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.WhyDynamoDB.html)  
 
 ## How does it work?
-
 [How it works](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.html)  
+[Core concepts](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html)  
+
 * A *table* is a collection of *items*, which consists of a number of *attributes*.
 * Each item has a *primary key* (one or more attributes), which distinguishes them from all other items. Except for the attributes in the primary key, the table is schemaless. 
 * Attributes are normally scalars, but can also be *document types*. [Rules for naming and datatypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html) - the most normal are *number*, *string*, *boolean*, *binary*, *null*, *lists* and *maps* (dictionaries). Keys can not be document types / nested, but must be a number, string, or binary.
