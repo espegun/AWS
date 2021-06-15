@@ -26,7 +26,7 @@ See the attached example files for basic table initiatlization, adding, removing
 
 Official and practical example of setting up and deploying a [DynamoDB database with boto3](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.html) in production.
 
-
 ## Useful links
 [AWS: What is DynamoDB?](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)  
-[Design patterns DynamoDB](https://www.youtube.com/watch?v=HaEPXoXVf2k) Se denne, visstnok veldig bra.  
+[Design patterns DynamoDB](https://www.youtube.com/watch?v=HaEPXoXVf2k) Se denne, visstnok veldig bra.
+  
