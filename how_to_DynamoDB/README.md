@@ -29,4 +29,4 @@ Official and practical example of setting up and deploying a [DynamoDB database 
 ## Useful links
 [AWS: What is DynamoDB?](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)  
 [Design patterns DynamoDB](https://www.youtube.com/watch?v=HaEPXoXVf2k) Se denne, visstnok veldig bra.
-  
+[Serie om data modelling i DynamoDB **IKKE LEST**](https://medium.com/expedia-group-tech/dynamodb-data-modeling-c4b02729ac08)    
